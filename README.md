@@ -1,4 +1,4 @@
-OreMod
+Ore Mod
 ======
 
 Custom ores for Minecraft 1.6.4 forge
@@ -25,4 +25,4 @@ ingots, all tools, and full armor for:
 
 =======================================
 
-yes, I realize I could have done be beginning all in one line, but I realized once I was finished and am too lazy to fix it. sorry.
+yes, I realize I could have done be beginning all in one line, but I realized once I was finished and I am too lazy to fix it. sorry.
