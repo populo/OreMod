@@ -6,11 +6,13 @@ import net.minecraft.item.EnumArmorMaterial;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemAxe;
+import net.minecraft.item.ItemHoe;
 import net.minecraft.item.ItemPickaxe;
 import net.minecraftforge.common.EnumHelper;
 import populo.mod.ores.materials.Ingot;
 import populo.mod.ores.tab.OreTabClass;
 import populo.mod.ores.tools.Axe;
+import populo.mod.ores.tools.Hoe;
 import populo.mod.ores.tools.Pickaxe;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -310,6 +312,22 @@ public class Ores {
 		roseAxe = (ItemAxe) new Axe(6022, RoseQuartzTools).setUnlocalizedName("roseAxe");
 		tigAxe = (ItemAxe) new Axe(6023, TigerEyeTools).setUnlocalizedName("tigAxe");
 		emAxe = (ItemAxe) new Axe(6024, EmeraldTools).setUnlocalizedName("emAxe");
+		
+		//hoes
+		
+		rubyHoe = (ItemHoe) new Hoe(6025, RubyTools).setUnlocalizedName("rubyHoe");
+		sapHoe = (ItemHoe) new Hoe(6013, SapphireTools).setUnlocalizedName("sapHoe");
+		silHoe = (ItemHoe) new Hoe(6014, SilverTools).setUnlocalizedName("silHoe");
+		copHoe = (ItemHoe) new Hoe(6015, CopperTools).setUnlocalizedName("copHoe");
+		leadHoe = (ItemHoe) new Hoe(6016, LeadTools).setUnlocalizedName("leadHoe");
+		tinHoe = (ItemHoe) new Hoe(6017, TinTools).setUnlocalizedName("tinHoe");
+		aluHoe = (ItemHoe) new Hoe(6018, AluminumTools).setUnlocalizedName("aluHoe");
+		graHoe = (ItemHoe) new Hoe(6019, GrapheneTools).setUnlocalizedName("graHoe");
+		ameHoe = (ItemHoe) new Hoe(6020, AmethystTools).setUnlocalizedName("ameHoe");
+		citHoe = (ItemHoe) new Hoe(6021, CitrineTools).setUnlocalizedName("citHoe");
+		roseHoe = (ItemHoe) new Hoe(6022, RoseQuartzTools).setUnlocalizedName("roseHoe");
+		tigHoe = (ItemHoe) new Hoe(6023, TigerEyeTools).setUnlocalizedName("tigHoe");
+		emHoe = (ItemHoe) new Hoe(6024, EmeraldTools).setUnlocalizedName("emHoe");
 		
 	}
 }
