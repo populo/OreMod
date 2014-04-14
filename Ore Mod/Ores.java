@@ -5,10 +5,12 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.EnumArmorMaterial;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemAxe;
 import net.minecraft.item.ItemPickaxe;
 import net.minecraftforge.common.EnumHelper;
 import populo.mod.ores.materials.Ingot;
 import populo.mod.ores.tab.OreTabClass;
+import populo.mod.ores.tools.Axe;
 import populo.mod.ores.tools.Pickaxe;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -292,6 +294,22 @@ public class Ores {
 		rosePick = (ItemPickaxe) new Pickaxe(6022, RoseQuartzTools).setUnlocalizedName("rosePick");
 		tigPick = (ItemPickaxe) new Pickaxe(6023, TigerEyeTools).setUnlocalizedName("tigPick");
 		emPick = (ItemPickaxe) new Pickaxe(6024, EmeraldTools).setUnlocalizedName("emPick");
+		
+		//axes
+		
+		rubyAxe = (ItemAxe) new Axe(6025, RubyTools).setUnlocalizedName("rubyAxe");
+		sapAxe = (ItemAxe) new Axe(6013, SapphireTools).setUnlocalizedName("sapAxe");
+		silAxe = (ItemAxe) new Axe(6014, SilverTools).setUnlocalizedName("silAxe");
+		copAxe = (ItemAxe) new Axe(6015, CopperTools).setUnlocalizedName("copAxe");
+		leadAxe = (ItemAxe) new Axe(6016, LeadTools).setUnlocalizedName("leadAxe");
+		tinAxe = (ItemAxe) new Axe(6017, TinTools).setUnlocalizedName("tinAxe");
+		aluAxe = (ItemAxe) new Axe(6018, AluminumTools).setUnlocalizedName("aluAxe");
+		graAxe = (ItemAxe) new Axe(6019, GrapheneTools).setUnlocalizedName("graAxe");
+		ameAxe = (ItemAxe) new Axe(6020, AmethystTools).setUnlocalizedName("ameAxe");
+		citAxe = (ItemAxe) new Axe(6021, CitrineTools).setUnlocalizedName("citAxe");
+		roseAxe = (ItemAxe) new Axe(6022, RoseQuartzTools).setUnlocalizedName("roseAxe");
+		tigAxe = (ItemAxe) new Axe(6023, TigerEyeTools).setUnlocalizedName("tigAxe");
+		emAxe = (ItemAxe) new Axe(6024, EmeraldTools).setUnlocalizedName("emAxe");
 		
 	}
 }
