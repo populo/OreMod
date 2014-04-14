@@ -304,66 +304,66 @@ public class Ores {
 		//axes
 		
 		rubyAxe = (ItemAxe) new Axe(6025, RubyTools).setUnlocalizedName("rubyAxe");
-		sapAxe = (ItemAxe) new Axe(6013, SapphireTools).setUnlocalizedName("sapAxe");
-		silAxe = (ItemAxe) new Axe(6014, SilverTools).setUnlocalizedName("silAxe");
-		copAxe = (ItemAxe) new Axe(6015, CopperTools).setUnlocalizedName("copAxe");
-		leadAxe = (ItemAxe) new Axe(6016, LeadTools).setUnlocalizedName("leadAxe");
-		tinAxe = (ItemAxe) new Axe(6017, TinTools).setUnlocalizedName("tinAxe");
-		aluAxe = (ItemAxe) new Axe(6018, AluminumTools).setUnlocalizedName("aluAxe");
-		graAxe = (ItemAxe) new Axe(6019, GrapheneTools).setUnlocalizedName("graAxe");
-		ameAxe = (ItemAxe) new Axe(6020, AmethystTools).setUnlocalizedName("ameAxe");
-		citAxe = (ItemAxe) new Axe(6021, CitrineTools).setUnlocalizedName("citAxe");
-		roseAxe = (ItemAxe) new Axe(6022, RoseQuartzTools).setUnlocalizedName("roseAxe");
-		tigAxe = (ItemAxe) new Axe(6023, TigerEyeTools).setUnlocalizedName("tigAxe");
-		emAxe = (ItemAxe) new Axe(6024, EmeraldTools).setUnlocalizedName("emAxe");
+		sapAxe = (ItemAxe) new Axe(6026, SapphireTools).setUnlocalizedName("sapAxe");
+		silAxe = (ItemAxe) new Axe(6027, SilverTools).setUnlocalizedName("silAxe");
+		copAxe = (ItemAxe) new Axe(6028, CopperTools).setUnlocalizedName("copAxe");
+		leadAxe = (ItemAxe) new Axe(6029, LeadTools).setUnlocalizedName("leadAxe");
+		tinAxe = (ItemAxe) new Axe(6030, TinTools).setUnlocalizedName("tinAxe");
+		aluAxe = (ItemAxe) new Axe(6031, AluminumTools).setUnlocalizedName("aluAxe");
+		graAxe = (ItemAxe) new Axe(6032, GrapheneTools).setUnlocalizedName("graAxe");
+		ameAxe = (ItemAxe) new Axe(6033, AmethystTools).setUnlocalizedName("ameAxe");
+		citAxe = (ItemAxe) new Axe(6034, CitrineTools).setUnlocalizedName("citAxe");
+		roseAxe = (ItemAxe) new Axe(6035, RoseQuartzTools).setUnlocalizedName("roseAxe");
+		tigAxe = (ItemAxe) new Axe(6036, TigerEyeTools).setUnlocalizedName("tigAxe");
+		emAxe = (ItemAxe) new Axe(6037, EmeraldTools).setUnlocalizedName("emAxe");
 		
 		//hoes
 		
-		rubyHoe = (ItemHoe) new Hoe(6025, RubyTools).setUnlocalizedName("rubyHoe");
-		sapHoe = (ItemHoe) new Hoe(6013, SapphireTools).setUnlocalizedName("sapHoe");
-		silHoe = (ItemHoe) new Hoe(6014, SilverTools).setUnlocalizedName("silHoe");
-		copHoe = (ItemHoe) new Hoe(6015, CopperTools).setUnlocalizedName("copHoe");
-		leadHoe = (ItemHoe) new Hoe(6016, LeadTools).setUnlocalizedName("leadHoe");
-		tinHoe = (ItemHoe) new Hoe(6017, TinTools).setUnlocalizedName("tinHoe");
-		aluHoe = (ItemHoe) new Hoe(6018, AluminumTools).setUnlocalizedName("aluHoe");
-		graHoe = (ItemHoe) new Hoe(6019, GrapheneTools).setUnlocalizedName("graHoe");
-		ameHoe = (ItemHoe) new Hoe(6020, AmethystTools).setUnlocalizedName("ameHoe");
-		citHoe = (ItemHoe) new Hoe(6021, CitrineTools).setUnlocalizedName("citHoe");
-		roseHoe = (ItemHoe) new Hoe(6022, RoseQuartzTools).setUnlocalizedName("roseHoe");
-		tigHoe = (ItemHoe) new Hoe(6023, TigerEyeTools).setUnlocalizedName("tigHoe");
-		emHoe = (ItemHoe) new Hoe(6024, EmeraldTools).setUnlocalizedName("emHoe");
+		rubyHoe = (ItemHoe) new Hoe(6038, RubyTools).setUnlocalizedName("rubyHoe");
+		sapHoe = (ItemHoe) new Hoe(6039, SapphireTools).setUnlocalizedName("sapHoe");
+		silHoe = (ItemHoe) new Hoe(6040, SilverTools).setUnlocalizedName("silHoe");
+		copHoe = (ItemHoe) new Hoe(6041, CopperTools).setUnlocalizedName("copHoe");
+		leadHoe = (ItemHoe) new Hoe(6042, LeadTools).setUnlocalizedName("leadHoe");
+		tinHoe = (ItemHoe) new Hoe(6043, TinTools).setUnlocalizedName("tinHoe");
+		aluHoe = (ItemHoe) new Hoe(6044, AluminumTools).setUnlocalizedName("aluHoe");
+		graHoe = (ItemHoe) new Hoe(6045, GrapheneTools).setUnlocalizedName("graHoe");
+		ameHoe = (ItemHoe) new Hoe(6046, AmethystTools).setUnlocalizedName("ameHoe");
+		citHoe = (ItemHoe) new Hoe(6047, CitrineTools).setUnlocalizedName("citHoe");
+		roseHoe = (ItemHoe) new Hoe(6048, RoseQuartzTools).setUnlocalizedName("roseHoe");
+		tigHoe = (ItemHoe) new Hoe(6049, TigerEyeTools).setUnlocalizedName("tigHoe");
+		emHoe = (ItemHoe) new Hoe(6050, EmeraldTools).setUnlocalizedName("emHoe");
 		
 		//shovels
 		
-		rubyShovel = (ItemSpade) new Shovel(6025, RubyTools).setUnlocalizedName("rubyShovel");
-		sapShovel = (ItemSpade) new Shovel(6013, SapphireTools).setUnlocalizedName("sapShovel");
-		silShovel = (ItemSpade) new Shovel(6014, SilverTools).setUnlocalizedName("silShovel");
-		copShovel = (ItemSpade) new Shovel(6015, CopperTools).setUnlocalizedName("copShovel");
-		leadShovel = (ItemSpade) new Shovel(6016, LeadTools).setUnlocalizedName("leadShovel");
-		tinShovel = (ItemSpade) new Shovel(6017, TinTools).setUnlocalizedName("tinShovel");
-		aluShovel = (ItemSpade) new Shovel(6018, AluminumTools).setUnlocalizedName("aluShovel");
-		graShovel = (ItemSpade) new Shovel(6019, GrapheneTools).setUnlocalizedName("graShovel");
-		ameShovel = (ItemSpade) new Shovel(6020, AmethystTools).setUnlocalizedName("ameShovel");
-		citShovel = (ItemSpade) new Shovel(6021, CitrineTools).setUnlocalizedName("citShovel");
-		roseShovel = (ItemSpade) new Shovel(6022, RoseQuartzTools).setUnlocalizedName("roseShovel");
-		tigShovel = (ItemSpade) new Shovel(6023, TigerEyeTools).setUnlocalizedName("tigShovel");
-		emShovel = (ItemSpade) new Shovel(6024, EmeraldTools).setUnlocalizedName("emShovel");
+		rubyShovel = (ItemSpade) new Shovel(6051, RubyTools).setUnlocalizedName("rubyShovel");
+		sapShovel = (ItemSpade) new Shovel(6052, SapphireTools).setUnlocalizedName("sapShovel");
+		silShovel = (ItemSpade) new Shovel(6053, SilverTools).setUnlocalizedName("silShovel");
+		copShovel = (ItemSpade) new Shovel(6054, CopperTools).setUnlocalizedName("copShovel");
+		leadShovel = (ItemSpade) new Shovel(6055, LeadTools).setUnlocalizedName("leadShovel");
+		tinShovel = (ItemSpade) new Shovel(6056, TinTools).setUnlocalizedName("tinShovel");
+		aluShovel = (ItemSpade) new Shovel(6057, AluminumTools).setUnlocalizedName("aluShovel");
+		graShovel = (ItemSpade) new Shovel(6058, GrapheneTools).setUnlocalizedName("graShovel");
+		ameShovel = (ItemSpade) new Shovel(6059, AmethystTools).setUnlocalizedName("ameShovel");
+		citShovel = (ItemSpade) new Shovel(6060, CitrineTools).setUnlocalizedName("citShovel");
+		roseShovel = (ItemSpade) new Shovel(6061, RoseQuartzTools).setUnlocalizedName("roseShovel");
+		tigShovel = (ItemSpade) new Shovel(6062, TigerEyeTools).setUnlocalizedName("tigShovel");
+		emShovel = (ItemSpade) new Shovel(6063, EmeraldTools).setUnlocalizedName("emShovel");
 		
 		//swords
 		
-		rubySword = (ItemSword) new Sword(6025, RubyTools).setUnlocalizedName("rubySword");
-		sapSword = (ItemSword) new Sword(6013, SapphireTools).setUnlocalizedName("sapSword");
-		silSword = (ItemSword) new Sword(6014, SilverTools).setUnlocalizedName("silSword");
-		copSword = (ItemSword) new Sword(6015, CopperTools).setUnlocalizedName("copSword");
-		leadSword = (ItemSword) new Sword(6016, LeadTools).setUnlocalizedName("leadSword");
-		tinSword = (ItemSword) new Sword(6017, TinTools).setUnlocalizedName("tinSword");
-		aluSword = (ItemSword) new Sword(6018, AluminumTools).setUnlocalizedName("aluSword");
-		graSword = (ItemSword) new Sword(6019, GrapheneTools).setUnlocalizedName("graSword");
-		ameSword = (ItemSword) new Sword(6020, AmethystTools).setUnlocalizedName("ameSword");
-		citSword = (ItemSword) new Sword(6021, CitrineTools).setUnlocalizedName("citSword");
-		roseSword = (ItemSword) new Sword(6022, RoseQuartzTools).setUnlocalizedName("roseSword");
-		tigSword = (ItemSword) new Sword(6023, TigerEyeTools).setUnlocalizedName("tigSword");
-		emSword = (ItemSword) new Sword(6024, EmeraldTools).setUnlocalizedName("emSword");
+		rubySword = (ItemSword) new Sword(6064, RubyTools).setUnlocalizedName("rubySword");
+		sapSword = (ItemSword) new Sword(6065, SapphireTools).setUnlocalizedName("sapSword");
+		silSword = (ItemSword) new Sword(6066, SilverTools).setUnlocalizedName("silSword");
+		copSword = (ItemSword) new Sword(6067, CopperTools).setUnlocalizedName("copSword");
+		leadSword = (ItemSword) new Sword(6068, LeadTools).setUnlocalizedName("leadSword");
+		tinSword = (ItemSword) new Sword(6069, TinTools).setUnlocalizedName("tinSword");
+		aluSword = (ItemSword) new Sword(6070, AluminumTools).setUnlocalizedName("aluSword");
+		graSword = (ItemSword) new Sword(6071, GrapheneTools).setUnlocalizedName("graSword");
+		ameSword = (ItemSword) new Sword(6072, AmethystTools).setUnlocalizedName("ameSword");
+		citSword = (ItemSword) new Sword(6073, CitrineTools).setUnlocalizedName("citSword");
+		roseSword = (ItemSword) new Sword(6074, RoseQuartzTools).setUnlocalizedName("roseSword");
+		tigSword = (ItemSword) new Sword(6075, TigerEyeTools).setUnlocalizedName("tigSword");
+		emSword = (ItemSword) new Sword(6076, EmeraldTools).setUnlocalizedName("emSword");
 		
 	}
 }
