@@ -9,6 +9,7 @@ import net.minecraft.item.ItemAxe;
 import net.minecraft.item.ItemHoe;
 import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemSpade;
+import net.minecraft.item.ItemSword;
 import net.minecraftforge.common.EnumHelper;
 import populo.mod.ores.materials.Ingot;
 import populo.mod.ores.tab.OreTabClass;
@@ -16,6 +17,7 @@ import populo.mod.ores.tools.Axe;
 import populo.mod.ores.tools.Hoe;
 import populo.mod.ores.tools.Pickaxe;
 import populo.mod.ores.tools.Shovel;
+import populo.mod.ores.tools.Sword;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
@@ -346,5 +348,22 @@ public class Ores {
 		roseShovel = (ItemSpade) new Shovel(6022, RoseQuartzTools).setUnlocalizedName("roseShovel");
 		tigShovel = (ItemSpade) new Shovel(6023, TigerEyeTools).setUnlocalizedName("tigShovel");
 		emShovel = (ItemSpade) new Shovel(6024, EmeraldTools).setUnlocalizedName("emShovel");
+		
+		//swords
+		
+		rubySword = (ItemSword) new Sword(6025, RubyTools).setUnlocalizedName("rubySword");
+		sapSword = (ItemSword) new Sword(6013, SapphireTools).setUnlocalizedName("sapSword");
+		silSword = (ItemSword) new Sword(6014, SilverTools).setUnlocalizedName("silSword");
+		copSword = (ItemSword) new Sword(6015, CopperTools).setUnlocalizedName("copSword");
+		leadSword = (ItemSword) new Sword(6016, LeadTools).setUnlocalizedName("leadSword");
+		tinSword = (ItemSword) new Sword(6017, TinTools).setUnlocalizedName("tinSword");
+		aluSword = (ItemSword) new Sword(6018, AluminumTools).setUnlocalizedName("aluSword");
+		graSword = (ItemSword) new Sword(6019, GrapheneTools).setUnlocalizedName("graSword");
+		ameSword = (ItemSword) new Sword(6020, AmethystTools).setUnlocalizedName("ameSword");
+		citSword = (ItemSword) new Sword(6021, CitrineTools).setUnlocalizedName("citSword");
+		roseSword = (ItemSword) new Sword(6022, RoseQuartzTools).setUnlocalizedName("roseSword");
+		tigSword = (ItemSword) new Sword(6023, TigerEyeTools).setUnlocalizedName("tigSword");
+		emSword = (ItemSword) new Sword(6024, EmeraldTools).setUnlocalizedName("emSword");
+		
 	}
 }
