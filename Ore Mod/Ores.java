@@ -25,6 +25,7 @@ import populo.mod.ores.armor.SapphireArmor;
 import populo.mod.ores.armor.SilverArmor;
 import populo.mod.ores.armor.TigerEyeArmor;
 import populo.mod.ores.armor.TinArmor;
+import populo.mod.ores.blocks.Ore;
 import populo.mod.ores.materials.Ingot;
 import populo.mod.ores.tab.OreTabClass;
 import populo.mod.ores.tools.Axe;
@@ -62,12 +63,12 @@ public class Ores {
 	public static EnumToolMaterial LeadTools = EnumHelper.addToolMaterial("Lead Tools", 3, 932, 7.1F, 8.3F, 13);
 	public static EnumToolMaterial TinTools = EnumHelper.addToolMaterial("Tin Tools", 2, 562, 4.2F, 4.1F, 42);
 	public static EnumToolMaterial AluminumTools = EnumHelper.addToolMaterial("Aluminum Tools", 1, 315, 6.3F, 5.1F, 19);
-	public static EnumToolMaterial GrapheneTools = EnumHelper.addToolMaterial("Graphene Tools", 3, 7402, 9.6F, 10.4F, 53);
+	public static EnumToolMaterial GrapheneTools = EnumHelper.addToolMaterial("Graphene Tools", 3, 9857, 9.6F, 10.4F, 53);
 	public static EnumToolMaterial AmethystTools = EnumHelper.addToolMaterial("Amethyst Tools", 3, 2843, 8.2F, 7.9F, 48);
 	public static EnumToolMaterial CitrineTools = EnumHelper.addToolMaterial("Citrine Tools", 2, 2644, 8.4F, 8.3F, 36);
 	public static EnumToolMaterial RoseQuartzTools = EnumHelper.addToolMaterial("Rose Quartz Tools", 1, 1852, 6.2F, 2.5F, 42);
 	public static EnumToolMaterial TigerEyeTools = EnumHelper.addToolMaterial("Tiger's Eye Tools", 3, 1943, 7.5F, 8.6F, 39);
-	public static EnumToolMaterial EmeraldTools =  EnumHelper.addToolMaterial("Emerald Tools", 3, 8392, 8.4F, 6.7F, 40);
+	public static EnumToolMaterial EmeraldTools =  EnumHelper.addToolMaterial("Emerald Tools", 3, 6342, 8.4F, 6.7F, 40);
 	
 	//enum armor
 	
@@ -442,5 +443,21 @@ public class Ores {
 		roseBoots = (ItemArmor) new RoseQuartzArmor(6126, RoseQuartzArmor, 5, 3).setUnlocalizedName("roseBoots");
 		tigBoots = (ItemArmor) new TigerEyeArmor(6127, TigerEyeArmor, 5, 3).setUnlocalizedName("tigBoots");
 		emBoots = (ItemArmor) new EmeraldArmor(6128, EmeraldArmor, 5, 3).setUnlocalizedName("emBoots");
+		
+		//ores
+		
+		rubyOre = new Ore(3500, "rubyOre").setUnlocalizedName("rubyOre").setHardness(7.3F);
+		sapOre = new Ore(3501, "sapOre").setUnlocalizedName("sapOre").setHardness(7.4F);
+		silOre = new Ore(3502, "silOre").setUnlocalizedName("silOre").setHardness(7.8F);
+		copOre = new Ore(3503, "copOre").setUnlocalizedName("copOre").setHardness(3.6F);
+		leadOre = new Ore(3505, "leadOre").setUnlocalizedName("leadOre").setHardness(9.1F);
+		tinOre = new Ore(3506, "tinOre").setUnlocalizedName("tinOre").setHardness(4.2F);
+		aluOre = new Ore(3507, "aluOre").setUnlocalizedName("aluOre").setHardness(4.6F);
+		graOre = new Ore(3508, "graOre").setUnlocalizedName("graOre").setHardness(16.2F);
+		ameOre = new Ore(3509, "ameOre").setUnlocalizedName("ameOre").setHardness(7.3F);
+		citOre = new Ore(3510, "citOre").setUnlocalizedName("citOre").setHardness(8.4F);
+		roseOre = new Ore(3511, "roseOre").setUnlocalizedName("roseOre").setHardness(8.5F);
+		tigOre = new Ore(3512, "tigOre").setUnlocalizedName("tigOre").setHardness(7.8F);
+		
 	}
 }
