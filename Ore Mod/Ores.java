@@ -253,8 +253,6 @@ public class Ores {
 	public static Item emLeggings;
 	public static Item emBoots;
 	public static Item emIngot;
-	public static Block emOre;
-	public static Block emBlock;
 	
 	public static CreativeTabs oreModTab = new OreTabClass(CreativeTabs.getNextID(), "Ore Mod Tab");
 	
