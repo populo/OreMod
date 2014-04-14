@@ -8,12 +8,14 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemAxe;
 import net.minecraft.item.ItemHoe;
 import net.minecraft.item.ItemPickaxe;
+import net.minecraft.item.ItemSpade;
 import net.minecraftforge.common.EnumHelper;
 import populo.mod.ores.materials.Ingot;
 import populo.mod.ores.tab.OreTabClass;
 import populo.mod.ores.tools.Axe;
 import populo.mod.ores.tools.Hoe;
 import populo.mod.ores.tools.Pickaxe;
+import populo.mod.ores.tools.Shovel;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
@@ -329,5 +331,20 @@ public class Ores {
 		tigHoe = (ItemHoe) new Hoe(6023, TigerEyeTools).setUnlocalizedName("tigHoe");
 		emHoe = (ItemHoe) new Hoe(6024, EmeraldTools).setUnlocalizedName("emHoe");
 		
+		//shovels
+		
+		rubyShovel = (ItemSpade) new Shovel(6025, RubyTools).setUnlocalizedName("rubyShovel");
+		sapShovel = (ItemSpade) new Shovel(6013, SapphireTools).setUnlocalizedName("sapShovel");
+		silShovel = (ItemSpade) new Shovel(6014, SilverTools).setUnlocalizedName("silShovel");
+		copShovel = (ItemSpade) new Shovel(6015, CopperTools).setUnlocalizedName("copShovel");
+		leadShovel = (ItemSpade) new Shovel(6016, LeadTools).setUnlocalizedName("leadShovel");
+		tinShovel = (ItemSpade) new Shovel(6017, TinTools).setUnlocalizedName("tinShovel");
+		aluShovel = (ItemSpade) new Shovel(6018, AluminumTools).setUnlocalizedName("aluShovel");
+		graShovel = (ItemSpade) new Shovel(6019, GrapheneTools).setUnlocalizedName("graShovel");
+		ameShovel = (ItemSpade) new Shovel(6020, AmethystTools).setUnlocalizedName("ameShovel");
+		citShovel = (ItemSpade) new Shovel(6021, CitrineTools).setUnlocalizedName("citShovel");
+		roseShovel = (ItemSpade) new Shovel(6022, RoseQuartzTools).setUnlocalizedName("roseShovel");
+		tigShovel = (ItemSpade) new Shovel(6023, TigerEyeTools).setUnlocalizedName("tigShovel");
+		emShovel = (ItemSpade) new Shovel(6024, EmeraldTools).setUnlocalizedName("emShovel");
 	}
 }
