@@ -43,8 +43,6 @@ public class Ingot extends Item {
 			this.itemIcon = reg.registerIcon("oremod:rose_ingot");
 		} else if (itemID == Ores.tigIngot.itemID) {
 			this.itemIcon = reg.registerIcon("oremod:tig_ingot");
-		} else if (itemID == Ores.emIngot.itemID) {
-			this.itemIcon = reg.registerIcon("oremod:em_ingot");
 		}
 	}
 

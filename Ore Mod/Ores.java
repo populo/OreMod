@@ -5,9 +5,11 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.EnumArmorMaterial;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemPickaxe;
 import net.minecraftforge.common.EnumHelper;
 import populo.mod.ores.materials.Ingot;
 import populo.mod.ores.tab.OreTabClass;
+import populo.mod.ores.tools.Pickaxe;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
@@ -252,7 +254,7 @@ public class Ores {
 	public static Item emChest;
 	public static Item emLeggings;
 	public static Item emBoots;
-	public static Item emIngot;
+
 	
 	public static CreativeTabs oreModTab = new OreTabClass(CreativeTabs.getNextID(), "Ore Mod Tab");
 	
@@ -262,19 +264,34 @@ public class Ores {
 		
 		//ingots
 		
-		rubyIngot = new Ingot(6000, 64, Ores.oreModTab).setUnlocalizedName("");
-		sapIngot = new Ingot(6001, 64, Ores.oreModTab).setUnlocalizedName("");
-		silIngot = new Ingot(6002, 64, Ores.oreModTab).setUnlocalizedName("");
-		copIngot = new Ingot(6003, 64, Ores.oreModTab).setUnlocalizedName("");
-		leadIngot = new Ingot(6004, 64, Ores.oreModTab).setUnlocalizedName("");
-		tinIngot = new Ingot(6005, 64, Ores.oreModTab).setUnlocalizedName("");
-		aluIngot = new Ingot(6006, 64, Ores.oreModTab).setUnlocalizedName("");
-		graIngot = new Ingot(6007, 64, Ores.oreModTab).setUnlocalizedName("");
-		ameIngot = new Ingot(6008, 64, Ores.oreModTab).setUnlocalizedName("");
-		citIngot = new Ingot(6009, 64, Ores.oreModTab).setUnlocalizedName("");
-		roseIngot = new Ingot(6010, 64, Ores.oreModTab).setUnlocalizedName("");
-		tigIngot = new Ingot(6011, 64, Ores.oreModTab).setUnlocalizedName("");
-		emIngot = new Ingot(6012, 64, Ores.oreModTab).setUnlocalizedName("");
+		rubyIngot = new Ingot(6000, 64, Ores.oreModTab).setUnlocalizedName("rubyIngot");
+		sapIngot = new Ingot(6001, 64, Ores.oreModTab).setUnlocalizedName("sapIngot");
+		silIngot = new Ingot(6002, 64, Ores.oreModTab).setUnlocalizedName("silIngot");
+		copIngot = new Ingot(6003, 64, Ores.oreModTab).setUnlocalizedName("copIngot");
+		leadIngot = new Ingot(6004, 64, Ores.oreModTab).setUnlocalizedName("leadIngot");
+		tinIngot = new Ingot(6005, 64, Ores.oreModTab).setUnlocalizedName("tinIngot");
+		aluIngot = new Ingot(6006, 64, Ores.oreModTab).setUnlocalizedName("aluIngot");
+		graIngot = new Ingot(6007, 64, Ores.oreModTab).setUnlocalizedName("graIngot");
+		ameIngot = new Ingot(6008, 64, Ores.oreModTab).setUnlocalizedName("ameIngot");
+		citIngot = new Ingot(6009, 64, Ores.oreModTab).setUnlocalizedName("citIngot");
+		roseIngot = new Ingot(6010, 64, Ores.oreModTab).setUnlocalizedName("roseIngot");
+		tigIngot = new Ingot(6011, 64, Ores.oreModTab).setUnlocalizedName("tigIngot");
+		
+		//pickaxes
+		
+		rubyPick = (ItemPickaxe) new Pickaxe(6012, RubyTools).setUnlocalizedName("rubyPick");
+		sapPick = (ItemPickaxe) new Pickaxe(6013, SapphireTools).setUnlocalizedName("sapPick");
+		silPick = (ItemPickaxe) new Pickaxe(6014, SilverTools).setUnlocalizedName("silPick");
+		copPick = (ItemPickaxe) new Pickaxe(6015, CopperTools).setUnlocalizedName("copPick");
+		leadPick = (ItemPickaxe) new Pickaxe(6016, LeadTools).setUnlocalizedName("leadPick");
+		tinPick = (ItemPickaxe) new Pickaxe(6017, TinTools).setUnlocalizedName("tinPick");
+		aluPick = (ItemPickaxe) new Pickaxe(6018, AluminumTools).setUnlocalizedName("aluPick");
+		graPick = (ItemPickaxe) new Pickaxe(6019, GrapheneTools).setUnlocalizedName("graPick");
+		amePick = (ItemPickaxe) new Pickaxe(6020, AmethystTools).setUnlocalizedName("amePick");
+		citPick = (ItemPickaxe) new Pickaxe(6021, CitrineTools).setUnlocalizedName("citPick");
+		rosePick = (ItemPickaxe) new Pickaxe(6022, RoseQuartzTools).setUnlocalizedName("rosePick");
+		tigPick = (ItemPickaxe) new Pickaxe(6023, TigerEyeTools).setUnlocalizedName("tigPick");
+		emPick = (ItemPickaxe) new Pickaxe(6024, EmeraldTools).setUnlocalizedName("emPick");
 		
 	}
 }
