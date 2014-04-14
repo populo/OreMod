@@ -11,6 +11,7 @@ public class Shovel extends ItemSpade {
 	
 	public Shovel(int ID, EnumToolMaterial material) {
 		super(ID, material);
+		setCreativeTab(Ores.oreModTab);
 	}
 	
 	@SideOnly(Side.CLIENT)

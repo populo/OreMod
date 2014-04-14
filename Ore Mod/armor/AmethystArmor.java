@@ -11,6 +11,7 @@ public class AmethystArmor extends ItemArmor {
 
 	public AmethystArmor(int ID, EnumArmorMaterial material, int par3, int par4) {
 		super(ID, material, par4, par4);
+		setCreativeTab(Ores.oreModTab);
 	}
 	
 	public void registerIcons(IconRegister reg) {

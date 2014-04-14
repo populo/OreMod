@@ -11,6 +11,7 @@ public class Sword extends ItemSword {
 	
 	public Sword(int ID, EnumToolMaterial material) {
 		super(ID, material);
+		setCreativeTab(Ores.oreModTab);
 	}
 	
 	@SideOnly(Side.CLIENT)

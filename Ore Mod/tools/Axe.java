@@ -11,6 +11,7 @@ public class Axe extends ItemAxe {
 	
 	public Axe(int ID, EnumToolMaterial material) {
 		super(ID, material);
+		setCreativeTab(Ores.oreModTab);
 	}
 	
 	@SideOnly(Side.CLIENT)

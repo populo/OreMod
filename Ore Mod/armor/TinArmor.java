@@ -11,6 +11,7 @@ public class TinArmor extends ItemArmor {
 
 	public TinArmor(int ID, EnumArmorMaterial material, int par3, int par4) {
 		super(ID, material, par4, par4);
+		setCreativeTab(Ores.oreModTab);
 	}
 	
 	public void registerIcons(IconRegister reg) {

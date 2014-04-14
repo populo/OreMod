@@ -11,6 +11,7 @@ public class Hoe extends ItemHoe {
 
 	public Hoe(int ID, EnumToolMaterial material) {
 		super(ID, material);
+		setCreativeTab(Ores.oreModTab);
 	}
 	
 	@SideOnly(Side.CLIENT)
