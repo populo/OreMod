@@ -25,6 +25,7 @@ import populo.mod.ores.armor.SapphireArmor;
 import populo.mod.ores.armor.SilverArmor;
 import populo.mod.ores.armor.TigerEyeArmor;
 import populo.mod.ores.armor.TinArmor;
+import populo.mod.ores.blocks.OBlock;
 import populo.mod.ores.blocks.Ore;
 import populo.mod.ores.materials.Ingot;
 import populo.mod.ores.tab.OreTabClass;
@@ -33,12 +34,15 @@ import populo.mod.ores.tools.Hoe;
 import populo.mod.ores.tools.Pickaxe;
 import populo.mod.ores.tools.Shovel;
 import populo.mod.ores.tools.Sword;
+import populo.mod.ores.world.WorldGen;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.SidedProxy;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
+import cpw.mods.fml.common.registry.GameRegistry;
 
 
 
@@ -459,5 +463,31 @@ public class Ores {
 		roseOre = new Ore(3511, "roseOre").setUnlocalizedName("roseOre").setHardness(8.5F);
 		tigOre = new Ore(3512, "tigOre").setUnlocalizedName("tigOre").setHardness(7.8F);
 		
+		
+		//blocks
+		
+		rubyBlock = new OBlock(3513, "rubyBlock").setUnlocalizedName("rubyBlock").setHardness(8.6F);
+		sapBlock = new OBlock(3514, "sapBlock").setUnlocalizedName("sapBlock").setHardness(9.4F);
+		silBlock = new OBlock(3515, "silBlock").setUnlocalizedName("silBlock").setHardness(6.1F);
+		copBlock = new OBlock(3516, "copBlock").setUnlocalizedName("copBlock").setHardness(4.7F);
+		leadBlock = new OBlock(3517, "leadBlock").setUnlocalizedName("leadBlock").setHardness(13.6F);
+		tinBlock = new OBlock(3518, "tinBlock").setUnlocalizedName("tinBlock").setHardness(6.4F);
+		aluBlock = new OBlock(3519, "aluBlock").setUnlocalizedName("aluBlock").setHardness(7.3F);
+		graBlock = new OBlock(3520, "graBlock").setUnlocalizedName("graBlock").setHardness(20.3F);
+		ameBlock = new OBlock(3521, "ameBlock").setUnlocalizedName("ameBlock").setHardness(7.1F);
+		citBlock = new OBlock(3522, "citBlock").setUnlocalizedName("citBlock").setHardness(8.2F);
+		roseBlock = new OBlock(3523, "roseBlock").setUnlocalizedName("roseBlock").setHardness(9.1F);
+		tigBlock = new OBlock(3524, "tigBlock").setUnlocalizedName("tigBlock").setHardness(10.4F);
 	}
+	
+	@EventHandler
+	public void load(FMLInitializationEvent event) {
+		proxy.registerRenderers();
+		proxy.registerBlocks();
+		
+		//world gen
+		
+		GameRegistry.registerWorldGenerator(new WorldGen());;
+	}
+	
 }
