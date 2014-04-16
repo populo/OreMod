@@ -93,195 +93,66 @@ public class Ores {
 	
 	//ruby
 	
-	public static Item rubyPick;
-	public static Item rubyAxe;
-	public static Item rubyHoe;
-	public static Item rubyShovel;
-	public static Item rubySword;
-	public static Item rubyHelmet;
-	public static Item rubyChest;
-	public static Item rubyLeggings;
-	public static Item rubyBoots;
-	public static Item rubyIngot;
-	public static Block rubyOre;
-	public static Block rubyBlock;
-	
+	public static Item rubyPick, rubyAxe, rubyHoe, rubyShovel, rubySword, rubyHelmet, rubyChest, rubyLeggings, rubyBoots, rubyIngot;
+	public static Block rubyOre, rubyBlock;
 	//sapphire
 	
-	public static Item sapPick;
-	public static Item sapAxe;
-	public static Item sapHoe;
-	public static Item sapShovel;
-	public static Item sapSword;
-	public static Item sapHelmet;
-	public static Item sapChest;
-	public static Item sapLeggings;
-	public static Item sapBoots;
-	public static Item sapIngot;
-	public static Block sapOre;
-	public static Block sapBlock;
+	public static Item sapPick, sapAxe, sapHoe, sapShovel, sapSword, sapHelmet, sapChest, sapLeggings, sapBoots, sapIngot;
+	public static Block sapOre, sapBlock;
 	
 	//silver
 	
-	public static Item silPick;
-	public static Item silAxe;
-	public static Item silHoe;
-	public static Item silShovel;
-	public static Item silSword;
-	public static Item silHelmet;
-	public static Item silChest;
-	public static Item silLeggings;
-	public static Item silBoots;
-	public static Item silIngot;
-	public static Block silOre;
-	public static Block silBlock;
+	public static Item silPick, silAxe, silHoe, silShovel, silSword, silHelmet, silChest, silLeggings, silBoots, silIngot;
+	public static Block silOre, silBlock;
 	
 	//copper
 	
-	public static Item copPick;
-	public static Item copAxe;
-	public static Item copHoe;
-	public static Item copShovel;
-	public static Item copSword;
-	public static Item copHelmet;
-	public static Item copChest;
-	public static Item copLeggings;
-	public static Item copBoots;
-	public static Item copIngot;
-	public static Block copOre;
-	public static Block copBlock;
+	public static Item copPick, copAxe, copHoe, copShovel, copSword, copHelmet, copChest, copLeggings, copBoots, copIngot;
+	public static Block copOre, copBlock;
 	
 	//lead
 	
-	public static Item leadPick;
-	public static Item leadAxe;
-	public static Item leadHoe;
-	public static Item leadShovel;
-	public static Item leadSword;
-	public static Item leadHelmet;
-	public static Item leadChest;
-	public static Item leadLeggings;
-	public static Item leadBoots;
-	public static Item leadIngot;
-	public static Block leadOre;
-	public static Block leadBlock;
+	public static Item leadPick, leadAxe, leadHoe, leadShovel, leadSword, leadHelmet, leadChest, leadLeggings, leadBoots, leadIngot;
+	public static Block leadOre, leadBlock;
 	
 	//tin
 	
-	public static Item tinPick;
-	public static Item tinAxe;
-	public static Item tinHoe;
-	public static Item tinShovel;
-	public static Item tinSword;
-	public static Item tinHelmet;
-	public static Item tinChest;
-	public static Item tinLeggings;
-	public static Item tinBoots;
-	public static Item tinIngot;
-	public static Block tinOre;
-	public static Block tinBlock;
+	public static Item tinPick, tinAxe, tinHoe, tinShovel, tinSword, tinHelmet, tinChest, tinLeggings, tinBoots, tinIngot;
+	public static Block tinOre, tinBlock;
 	
 	//aluminum
 	
-	public static Item aluPick;
-	public static Item aluAxe;
-	public static Item aluHoe;
-	public static Item aluShovel;
-	public static Item aluSword;
-	public static Item aluHelmet;
-	public static Item aluChest;
-	public static Item aluLeggings;
-	public static Item aluBoots;
-	public static Item aluIngot;
-	public static Block aluOre;
-	public static Block aluBlock;
+	public static Item aluPick, aluAxe, aluHoe, aluShovel, aluSword, aluHelmet, aluChest, aluLeggings, aluBoots, aluIngot;
+	public static Block aluOre, aluBlock;
 	
 	//graphene
 	
-	public static Item graPick;
-	public static Item graAxe;
-	public static Item graHoe;
-	public static Item graShovel;
-	public static Item graSword;
-	public static Item graHelmet;
-	public static Item graChest;
-	public static Item graLeggings;
-	public static Item graBoots;
-	public static Item graIngot;
-	public static Block graOre;
-	public static Block graBlock;
+	public static Item graPick, graAxe, graHoe, graShovel, graSword, graHelmet, graChest, graLeggings, graBoots, graIngot;
+	public static Block graOre, graBlock;
 	
 	//amethyst
 	
-	public static Item amePick;
-	public static Item ameAxe;
-	public static Item ameHoe;
-	public static Item ameShovel;
-	public static Item ameSword;
-	public static Item ameHelmet;
-	public static Item ameChest;
-	public static Item ameLeggings;
-	public static Item ameBoots;
-	public static Item ameIngot;
-	public static Block ameOre;
-	public static Block ameBlock;
+	public static Item amePick, ameAxe, ameHoe, ameShovel, ameSword, ameHelmet, ameChest, ameLeggings, ameBoots, ameIngot;
+	public static Block ameOre, ameBlock;
 	
 	//citrine
 	
-	public static Item citPick;
-	public static Item citAxe;
-	public static Item citHoe;
-	public static Item citShovel;
-	public static Item citSword;
-	public static Item citHelmet;
-	public static Item citChest;
-	public static Item citLeggings;
-	public static Item citBoots;
-	public static Item citIngot;
-	public static Block citOre;
-	public static Block citBlock;
+	public static Item citPick, citAxe, citHoe, citShovel, citSword, citHelmet, citChest, citLeggings, citBoots, citIngot;
+	public static Block citOre, citBlock;
 	
 	//rose quartz
 	
-	public static Item rosePick;
-	public static Item roseAxe;
-	public static Item roseHoe;
-	public static Item roseShovel;
-	public static Item roseSword;
-	public static Item roseHelmet;
-	public static Item roseChest;
-	public static Item roseLeggings;
-	public static Item roseBoots;
-	public static Item roseIngot;
-	public static Block roseOre;
-	public static Block roseBlock;
+	public static Item rosePick, roseAxe, roseHoe, roseShovel, roseSword, roseHelmet, roseChest, roseLeggings, roseBoots, roseIngot;
+	public static Block roseOre, roseBlock;
 	
 	//tiger eye
 	
-	public static Item tigPick;
-	public static Item tigAxe;
-	public static Item tigHoe;
-	public static Item tigShovel;
-	public static Item tigSword;
-	public static Item tigHelmet;
-	public static Item tigChest;
-	public static Item tigLeggings;
-	public static Item tigBoots;
-	public static Item tigIngot;
-	public static Block tigOre;
-	public static Block tigBlock;
+	public static Item tigPick, tigAxe, tigHoe, tigShovel, tigSword, tigHelmet, tigChest, tigLeggings, tigBoots, tigIngot;
+	public static Block tigOre, tigBlock;
 	
 	//emerald
 	
-	public static Item emPick;
-	public static Item emAxe;
-	public static Item emHoe;
-	public static Item emShovel;
-	public static Item emSword;
-	public static Item emHelmet;
-	public static Item emChest;
-	public static Item emLeggings;
-	public static Item emBoots;
+	public static Item emPick, emAxe, emHoe, emShovel, emSword, emHelmet, emChest, emLeggings, emBoots, emIngot;
 
 	
 	public static CreativeTabs oreModTab = new OreTabClass(CreativeTabs.getNextID(), "Ore Mod Tab");
