@@ -586,6 +586,478 @@ public class Ores {
 			"#", '#', Ores.tigBlock
 		});
 		
+		/*
+		 * items
+		 */
+		
+		//ruby
+		
+		GameRegistry.addRecipe(new ItemStack(Ores.rubySword, 1), new Object[] {
+			"#", "#", "s", '#', Ores.rubyIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.rubyHoe, 1), new Object[] {
+			"## ", " s ", " s ", '#', Ores.rubyIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.rubyHoe, 1), new Object[] {
+			" ##", " s ", " s ", '#', Ores.rubyIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.rubyShovel, 1), new Object[] {
+			"#", "s", "s", '#', Ores.rubyIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.rubyPick, 1), new Object[] {
+			"###", "s", "s", '#', Ores.rubyIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.rubyAxe, 1), new Object[] {
+			"## ", "#s ", " s ", '#', Ores.rubyIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.rubyHoe, 1), new Object[] {
+			" ##", " s#", " s ", '#', Ores.rubyIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.rubyHelmet, 1), new Object[] {
+			"###", "# #", '#', Ores.rubyIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.rubyChest, 1), new Object[] {
+			"# #", "###", "###", '#', Ores.rubyIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.rubyLeggings, 1), new Object[] {
+			"###", "# #", "# #", '#', Ores.rubyIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.rubyBoots, 1), new Object[] {
+			"# #", "# #", '#', Ores.rubyIngot
+		});
+		
+		//sapphire
+		
+		GameRegistry.addRecipe(new ItemStack(Ores.sapSword, 1), new Object[] {
+			"#", "#", "s", '#', Ores.sapIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.sapHoe, 1), new Object[] {
+			"## ", " s ", " s ", '#', Ores.sapIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.sapHoe, 1), new Object[] {
+			" ##", " s ", " s ", '#', Ores.sapIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.sapShovel, 1), new Object[] {
+			"#", "s", "s", '#', Ores.sapIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.sapPick, 1), new Object[] {
+			"###", "s", "s", '#', Ores.sapIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.sapAxe, 1), new Object[] {
+			"## ", "#s ", " s ", '#', Ores.sapIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.sapHoe, 1), new Object[] {
+			" ##", " s#", " s ", '#', Ores.sapIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.sapHelmet, 1), new Object[] {
+			"###", "# #", '#', Ores.sapIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.sapChest, 1), new Object[] {
+			"# #", "###", "###", '#', Ores.sapIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.sapLeggings, 1), new Object[] {
+			"###", "# #", "# #", '#', Ores.sapIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.sapBoots, 1), new Object[] {
+			"# #", "# #", '#', Ores.sapIngot
+		});
+		
+		//silver
+		
+		GameRegistry.addRecipe(new ItemStack(Ores.silSword, 1), new Object[] {
+			"#", "#", "s", '#', Ores.silIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.silHoe, 1), new Object[] {
+			"## ", " s ", " s ", '#', Ores.silIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.silHoe, 1), new Object[] {
+			" ##", " s ", " s ", '#', Ores.silIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.silShovel, 1), new Object[] {
+			"#", "s", "s", '#', Ores.silIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.silPick, 1), new Object[] {
+			"###", "s", "s", '#', Ores.silIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.silAxe, 1), new Object[] {
+			"## ", "#s ", " s ", '#', Ores.silIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.silHoe, 1), new Object[] {
+			" ##", " s#", " s ", '#', Ores.silIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.silHelmet, 1), new Object[] {
+			"###", "# #", '#', Ores.silIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.silChest, 1), new Object[] {
+			"# #", "###", "###", '#', Ores.silIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.silLeggings, 1), new Object[] {
+			"###", "# #", "# #", '#', Ores.silIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.silBoots, 1), new Object[] {
+			"# #", "# #", '#', Ores.silIngot
+		});
+		
+		//copper
+		
+		GameRegistry.addRecipe(new ItemStack(Ores.copSword, 1), new Object[] {
+			"#", "#", "s", '#', Ores.copIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.copHoe, 1), new Object[] {
+			"## ", " s ", " s ", '#', Ores.copIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.copHoe, 1), new Object[] {
+			" ##", " s ", " s ", '#', Ores.copIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.copShovel, 1), new Object[] {
+			"#", "s", "s", '#', Ores.copIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.copPick, 1), new Object[] {
+			"###", "s", "s", '#', Ores.copIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.copAxe, 1), new Object[] {
+			"## ", "#s ", " s ", '#', Ores.copIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.copHoe, 1), new Object[] {
+			" ##", " s#", " s ", '#', Ores.copIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.copHelmet, 1), new Object[] {
+			"###", "# #", '#', Ores.copIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.copChest, 1), new Object[] {
+			"# #", "###", "###", '#', Ores.copIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.copLeggings, 1), new Object[] {
+			"###", "# #", "# #", '#', Ores.copIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.copBoots, 1), new Object[] {
+			"# #", "# #", '#', Ores.copIngot
+		});
+		
+		//lead
+		
+		GameRegistry.addRecipe(new ItemStack(Ores.leadSword, 1), new Object[] {
+			"#", "#", "s", '#', Ores.leadIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.leadHoe, 1), new Object[] {
+			"## ", " s ", " s ", '#', Ores.leadIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.leadHoe, 1), new Object[] {
+			" ##", " s ", " s ", '#', Ores.leadIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.leadShovel, 1), new Object[] {
+			"#", "s", "s", '#', Ores.leadIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.leadPick, 1), new Object[] {
+			"###", "s", "s", '#', Ores.leadIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.leadAxe, 1), new Object[] {
+			"## ", "#s ", " s ", '#', Ores.leadIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.leadHoe, 1), new Object[] {
+			" ##", " s#", " s ", '#', Ores.leadIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.leadHelmet, 1), new Object[] {
+			"###", "# #", '#', Ores.leadIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.leadChest, 1), new Object[] {
+			"# #", "###", "###", '#', Ores.leadIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.leadLeggings, 1), new Object[] {
+			"###", "# #", "# #", '#', Ores.leadIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.leadBoots, 1), new Object[] {
+			"# #", "# #", '#', Ores.leadIngot
+		});
+		
+		//tin
+		
+		GameRegistry.addRecipe(new ItemStack(Ores.tinSword, 1), new Object[] {
+			"#", "#", "s", '#', Ores.tinIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tinHoe, 1), new Object[] {
+			"## ", " s ", " s ", '#', Ores.tinIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tinHoe, 1), new Object[] {
+			" ##", " s ", " s ", '#', Ores.tinIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tinShovel, 1), new Object[] {
+			"#", "s", "s", '#', Ores.tinIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tinPick, 1), new Object[] {
+			"###", "s", "s", '#', Ores.tinIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tinAxe, 1), new Object[] {
+			"## ", "#s ", " s ", '#', Ores.tinIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tinHoe, 1), new Object[] {
+			" ##", " s#", " s ", '#', Ores.tinIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tinHelmet, 1), new Object[] {
+			"###", "# #", '#', Ores.tinIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tinChest, 1), new Object[] {
+			"# #", "###", "###", '#', Ores.tinIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tinLeggings, 1), new Object[] {
+			"###", "# #", "# #", '#', Ores.tinIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tinBoots, 1), new Object[] {
+			"# #", "# #", '#', Ores.tinIngot
+		});
+		
+		//aluminum
+		
+		GameRegistry.addRecipe(new ItemStack(Ores.aluSword, 1), new Object[] {
+			"#", "#", "s", '#', Ores.aluIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.aluHoe, 1), new Object[] {
+			"## ", " s ", " s ", '#', Ores.aluIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.aluHoe, 1), new Object[] {
+			" ##", " s ", " s ", '#', Ores.aluIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.aluShovel, 1), new Object[] {
+			"#", "s", "s", '#', Ores.aluIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.aluPick, 1), new Object[] {
+			"###", "s", "s", '#', Ores.aluIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.aluAxe, 1), new Object[] {
+			"## ", "#s ", " s ", '#', Ores.aluIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.aluHoe, 1), new Object[] {
+			" ##", " s#", " s ", '#', Ores.aluIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.aluHelmet, 1), new Object[] {
+			"###", "# #", '#', Ores.aluIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.aluChest, 1), new Object[] {
+			"# #", "###", "###", '#', Ores.aluIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.aluLeggings, 1), new Object[] {
+			"###", "# #", "# #", '#', Ores.aluIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.aluBoots, 1), new Object[] {
+			"# #", "# #", '#', Ores.aluIngot
+		});
+		
+		//graphene
+		
+		GameRegistry.addRecipe(new ItemStack(Ores.graSword, 1), new Object[] {
+			"#", "#", "s", '#', Ores.graIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.graHoe, 1), new Object[] {
+			"## ", " s ", " s ", '#', Ores.graIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.graHoe, 1), new Object[] {
+			" ##", " s ", " s ", '#', Ores.graIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.graShovel, 1), new Object[] {
+			"#", "s", "s", '#', Ores.graIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.graPick, 1), new Object[] {
+			"###", "s", "s", '#', Ores.graIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.graAxe, 1), new Object[] {
+			"## ", "#s ", " s ", '#', Ores.graIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.graHoe, 1), new Object[] {
+			" ##", " s#", " s ", '#', Ores.graIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.graHelmet, 1), new Object[] {
+			"###", "# #", '#', Ores.graIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.graChest, 1), new Object[] {
+			"# #", "###", "###", '#', Ores.graIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.graLeggings, 1), new Object[] {
+			"###", "# #", "# #", '#', Ores.graIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.graBoots, 1), new Object[] {
+			"# #", "# #", '#', Ores.graIngot
+		});
+		
+		//amethyst
+		
+		GameRegistry.addRecipe(new ItemStack(Ores.ameSword, 1), new Object[] {
+			"#", "#", "s", '#', Ores.ameIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.ameHoe, 1), new Object[] {
+			"## ", " s ", " s ", '#', Ores.ameIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.ameHoe, 1), new Object[] {
+			" ##", " s ", " s ", '#', Ores.ameIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.ameShovel, 1), new Object[] {
+			"#", "s", "s", '#', Ores.ameIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.amePick, 1), new Object[] {
+			"###", "s", "s", '#', Ores.ameIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.ameAxe, 1), new Object[] {
+			"## ", "#s ", " s ", '#', Ores.ameIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.ameHoe, 1), new Object[] {
+			" ##", " s#", " s ", '#', Ores.ameIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.ameHelmet, 1), new Object[] {
+			"###", "# #", '#', Ores.ameIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.ameChest, 1), new Object[] {
+			"# #", "###", "###", '#', Ores.ameIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.ameLeggings, 1), new Object[] {
+			"###", "# #", "# #", '#', Ores.ameIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.ameBoots, 1), new Object[] {
+			"# #", "# #", '#', Ores.ameIngot
+		});
+		
+		//citrine
+		
+		GameRegistry.addRecipe(new ItemStack(Ores.citSword, 1), new Object[] {
+			"#", "#", "s", '#', Ores.citIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.citHoe, 1), new Object[] {
+			"## ", " s ", " s ", '#', Ores.citIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.citHoe, 1), new Object[] {
+			" ##", " s ", " s ", '#', Ores.citIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.citShovel, 1), new Object[] {
+			"#", "s", "s", '#', Ores.citIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.citPick, 1), new Object[] {
+			"###", "s", "s", '#', Ores.citIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.citAxe, 1), new Object[] {
+			"## ", "#s ", " s ", '#', Ores.citIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.citHoe, 1), new Object[] {
+			" ##", " s#", " s ", '#', Ores.citIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.citHelmet, 1), new Object[] {
+			"###", "# #", '#', Ores.citIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.citChest, 1), new Object[] {
+			"# #", "###", "###", '#', Ores.citIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.citLeggings, 1), new Object[] {
+			"###", "# #", "# #", '#', Ores.citIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.citBoots, 1), new Object[] {
+			"# #", "# #", '#', Ores.citIngot
+		});
+		
+		//rose
+		
+		GameRegistry.addRecipe(new ItemStack(Ores.roseSword, 1), new Object[] {
+			"#", "#", "s", '#', Ores.roseIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.roseHoe, 1), new Object[] {
+			"## ", " s ", " s ", '#', Ores.roseIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.roseHoe, 1), new Object[] {
+			" ##", " s ", " s ", '#', Ores.roseIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.roseShovel, 1), new Object[] {
+			"#", "s", "s", '#', Ores.roseIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.rosePick, 1), new Object[] {
+			"###", "s", "s", '#', Ores.roseIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.roseAxe, 1), new Object[] {
+			"## ", "#s ", " s ", '#', Ores.roseIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.roseHoe, 1), new Object[] {
+			" ##", " s#", " s ", '#', Ores.roseIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.roseHelmet, 1), new Object[] {
+			"###", "# #", '#', Ores.roseIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.roseChest, 1), new Object[] {
+			"# #", "###", "###", '#', Ores.roseIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.roseLeggings, 1), new Object[] {
+			"###", "# #", "# #", '#', Ores.roseIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.roseBoots, 1), new Object[] {
+			"# #", "# #", '#', Ores.roseIngot
+		});
+		
+		//tiger eye
+		
+		GameRegistry.addRecipe(new ItemStack(Ores.tigSword, 1), new Object[] {
+			"#", "#", "s", '#', Ores.tigIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tigHoe, 1), new Object[] {
+			"## ", " s ", " s ", '#', Ores.tigIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tigHoe, 1), new Object[] {
+			" ##", " s ", " s ", '#', Ores.tigIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tigShovel, 1), new Object[] {
+			"#", "s", "s", '#', Ores.tigIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tigPick, 1), new Object[] {
+			"###", "s", "s", '#', Ores.tigIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tigAxe, 1), new Object[] {
+			"## ", "#s ", " s ", '#', Ores.tigIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tigHoe, 1), new Object[] {
+			" ##", " s#", " s ", '#', Ores.tigIngot, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tigHelmet, 1), new Object[] {
+			"###", "# #", '#', Ores.tigIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tigChest, 1), new Object[] {
+			"# #", "###", "###", '#', Ores.tigIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tigLeggings, 1), new Object[] {
+			"###", "# #", "# #", '#', Ores.tigIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tigBoots, 1), new Object[] {
+			"# #", "# #", '#', Ores.tigIngot
+		});
+		
+		//emerald
+		
+		GameRegistry.addRecipe(new ItemStack(Ores.emSword, 1), new Object[] {
+			"#", "#", "s", '#', Item.emerald, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.emHoe, 1), new Object[] {
+			"## ", " s ", " s ", '#', Item.emerald, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.emHoe, 1), new Object[] {
+			" ##", " s ", " s ", '#', Item.emerald, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.emShovel, 1), new Object[] {
+			"#", "s", "s", '#', Item.emerald, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.emPick, 1), new Object[] {
+			"###", "s", "s", '#', Item.emerald, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.emAxe, 1), new Object[] {
+			"## ", "#s ", " s ", '#', Item.emerald, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.emHoe, 1), new Object[] {
+			" ##", " s#", " s ", '#', Item.emerald, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.emHelmet, 1), new Object[] {
+			"###", "# #", '#', Item.emerald
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.emChest, 1), new Object[] {
+			"# #", "###", "###", '#', Item.emerald
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.emLeggings, 1), new Object[] {
+			"###", "# #", "# #", '#', Item.emerald
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.emBoots, 1), new Object[] {
+			"# #", "# #", '#', Item.emerald
+		});
+		
 	}
 	
 }
