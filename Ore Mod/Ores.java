@@ -10,6 +10,7 @@ import net.minecraft.item.ItemAxe;
 import net.minecraft.item.ItemHoe;
 import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemSpade;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraftforge.common.EnumHelper;
 import populo.mod.ores.armor.AluminumArmor;
@@ -486,8 +487,105 @@ public class Ores {
 		proxy.registerBlocks();
 		
 		//world gen
+		/*
+		 * Tweak!!!
+		 */
+		GameRegistry.registerWorldGenerator(new WorldGen());
 		
-		GameRegistry.registerWorldGenerator(new WorldGen());;
+		//smelting
+		
+		GameRegistry.addSmelting(Ores.rubyOre.blockID, new ItemStack(Ores.rubyIngot, 1), 5.0F);
+		GameRegistry.addSmelting(Ores.sapOre.blockID, new ItemStack(Ores.sapIngot, 1), 5.0F);
+		GameRegistry.addSmelting(Ores.silOre.blockID, new ItemStack(Ores.silIngot, 1), 5.0F);
+		GameRegistry.addSmelting(Ores.copOre.blockID, new ItemStack(Ores.copIngot, 1), 5.0F);
+		GameRegistry.addSmelting(Ores.leadOre.blockID, new ItemStack(Ores.leadIngot, 1), 5.0F);
+		GameRegistry.addSmelting(Ores.tinOre.blockID, new ItemStack(Ores.tinIngot, 1), 5.0F);
+		GameRegistry.addSmelting(Ores.aluOre.blockID, new ItemStack(Ores.aluIngot, 1), 5.0F);
+		GameRegistry.addSmelting(Ores.graOre.blockID, new ItemStack(Ores.graIngot, 1), 5.0F);
+		GameRegistry.addSmelting(Ores.ameOre.blockID, new ItemStack(Ores.ameIngot, 1), 5.0F);
+		GameRegistry.addSmelting(Ores.citOre.blockID, new ItemStack(Ores.citIngot, 1), 5.0F);
+		GameRegistry.addSmelting(Ores.roseOre.blockID, new ItemStack(Ores.roseIngot, 1), 5.0F);
+		GameRegistry.addSmelting(Ores.tigOre.blockID, new ItemStack(Ores.tigIngot, 1), 5.0F);
+
+		/*
+		 * Crafting
+		 */
+
+		//blocks <--> ingots
+
+		GameRegistry.addRecipe(new ItemStack(Ores.rubyBlock, 1), new Object[] {
+			"###", "###", "###", '#', Ores.rubyIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.rubyIngot, 9), new Object[] {
+			"#", '#', Ores.rubyBlock
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.sapBlock, 1), new Object[] {
+			"###", "###", "###", '#', Ores.sapIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.sapIngot, 9), new Object[] {
+			"#", '#', Ores.sapBlock
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.silBlock, 1), new Object[] {
+			"###", "###", "###", '#', Ores.silIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.silIngot, 9), new Object[] {
+			"#", '#', Ores.silBlock
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.copBlock, 1), new Object[] {
+			"###", "###", "###", '#', Ores.copIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.copIngot, 9), new Object[] {
+			"#", '#', Ores.copBlock
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.leadBlock, 1), new Object[] {
+			"###", "###", "###", '#', Ores.leadIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.leadIngot, 9), new Object[] {
+			"#", '#', Ores.leadBlock
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tinBlock, 1), new Object[] {
+			"###", "###", "###", '#', Ores.tinIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tinIngot, 9), new Object[] {
+			"#", '#', Ores.tinBlock
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.aluBlock, 1), new Object[] {
+			"###", "###", "###", '#', Ores.aluIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.aluIngot, 9), new Object[] {
+			"#", '#', Ores.aluBlock
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.graBlock, 1), new Object[] {
+			"###", "###", "###", '#', Ores.graIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.graIngot, 9), new Object[] {
+			"#", '#', Ores.graBlock
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.ameBlock, 1), new Object[] {
+			"###", "###", "###", '#', Ores.ameIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.ameIngot, 9), new Object[] {
+			"#", '#', Ores.ameBlock
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.citBlock, 1), new Object[] {
+			"###", "###", "###", '#', Ores.citIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.citIngot, 9), new Object[] {
+			"#", '#', Ores.citBlock
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.roseBlock, 1), new Object[] {
+			"###", "###", "###", '#', Ores.roseIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.roseIngot, 9), new Object[] {
+			"#", '#', Ores.roseBlock
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tigBlock, 1), new Object[] {
+			"###", "###", "###", '#', Ores.tigIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tigIngot, 9), new Object[] {
+			"#", '#', Ores.tigBlock
+		});
+		
 	}
 	
 }
