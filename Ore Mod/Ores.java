@@ -27,6 +27,7 @@ import populo.mod.ores.armor.SapphireArmor;
 import populo.mod.ores.armor.SilverArmor;
 import populo.mod.ores.armor.TigerEyeArmor;
 import populo.mod.ores.armor.TinArmor;
+import populo.mod.ores.armor.TungstenArmor;
 import populo.mod.ores.blocks.OBlock;
 import populo.mod.ores.blocks.Ore;
 import populo.mod.ores.materials.Ingot;
@@ -36,6 +37,7 @@ import populo.mod.ores.tools.Hoe;
 import populo.mod.ores.tools.Pickaxe;
 import populo.mod.ores.tools.Shovel;
 import populo.mod.ores.tools.Sword;
+import populo.mod.ores.world.TungstenFuel;
 import populo.mod.ores.world.WorldGen;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -45,6 +47,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.common.registry.LanguageRegistry;
 
 
 
@@ -374,6 +377,8 @@ public class Ores {
 		tunBlock = new OBlock(3526, "tunBlock").setUnlocalizedName("tunBlock").setHardness(8.0F);
 		tunMoltenBlock = new OBlock(3527, "tunMBlock").setUnlocalizedName("tunMBlock").setHardness(3.5F);
 		
+		//grass seeds
+		
 		MinecraftForge.addGrassSeed(new ItemStack(Ores.tunNugget), 2);
 		
 		/*
@@ -489,6 +494,18 @@ public class Ores {
 		});
 		GameRegistry.addRecipe(new ItemStack(Ores.tigIngot, 9), new Object[] {
 			"#", '#', Ores.tigBlock
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tunBlock, 1), new Object[] {
+			"###", "###", "###", '#', Ores.tunIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tunIngot, 9), new Object[] {
+			"#", '#', Ores.tunBlock
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tunMoltenBlock, 1), new Object[] {
+			"###", "###", "###", '#', Ores.tunMolten
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tunMolten, 9), new Object[] {
+			"#", '#', Ores.tunMoltenBlock
 		});
 		
 		/*
@@ -963,6 +980,227 @@ public class Ores {
 			"# #", "# #", '#', Item.emerald
 		});
 		
+		//tungsten
+		
+		GameRegistry.addRecipe(new ItemStack(Ores.tunSword, 1), new Object[] {
+			"#", "#", "s", '#', Ores.tunMolten, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tunHoe, 1), new Object[] {
+			"## ", " s ", " s ", '#', Ores.tunMolten, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tunHoe, 1), new Object[] {
+			" ##", " s ", " s ", '#', Ores.tunMolten, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tunShovel, 1), new Object[] {
+			"#", "s", "s", '#', Ores.tunMolten, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tunPick, 1), new Object[] {
+			"###", "s", "s", '#', Ores.tunMolten, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tunAxe, 1), new Object[] {
+			"## ", "#s ", " s ", '#', Ores.tunMolten, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tunHoe, 1), new Object[] {
+			" ##", " s#", " s ", '#', Ores.tunMolten, 's', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tunHelmet, 1), new Object[] {
+			"###", "# #", '#', Ores.tunMolten
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tunChest, 1), new Object[] {
+			"# #", "###", "###", '#', Ores.tunMolten
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tunLeggings, 1), new Object[] {
+			"###", "# #", "# #", '#', Ores.tunMolten
+		});
+		GameRegistry.addRecipe(new ItemStack(Ores.tunBoots, 1), new Object[] {
+			"# #", "# #", '#', Ores.tunMolten
+		});
+		
+		//tungsten fuel
+		
+		GameRegistry.registerFuelHandler(new TungstenFuel());
+		
+		//names ruby
+		
+		LanguageRegistry.addName(rubyPick, "Ruby Pickaxe");
+		LanguageRegistry.addName(rubyAxe, "Ruby Axe");
+		LanguageRegistry.addName(rubyHoe, "Ruby Hoe");
+		LanguageRegistry.addName(rubyShovel, "Ruby Shovel");
+		LanguageRegistry.addName(rubySword, "Ruby Sword");
+		LanguageRegistry.addName(rubyIngot, "Ruby Ingot");
+		LanguageRegistry.addName(rubyHelmet, "Ruby Helmet");
+		LanguageRegistry.addName(rubyChest, "Ruby Chestplate");
+		LanguageRegistry.addName(rubyLeggings, "Ruby Leggings");
+		LanguageRegistry.addName(rubyBoots, "Ruby Boots");
+
+		//names sapphire
+
+		LanguageRegistry.addName(sapPick, "Sapphire Pickaxe");
+		LanguageRegistry.addName(sapAxe, "Sapphire Axe");
+		LanguageRegistry.addName(sapHoe, "Sapphire Hoe");
+		LanguageRegistry.addName(sapShovel, "Sapphire Shovel");
+		LanguageRegistry.addName(sapSword, "Sapphire Sword");
+		LanguageRegistry.addName(sapIngot, "Sapphire Ingot");
+		LanguageRegistry.addName(sapHelmet, "Sapphire Helmet");
+		LanguageRegistry.addName(sapChest, "Sapphire Chestplate");
+		LanguageRegistry.addName(sapLeggings, "Sapphire Leggings");
+		LanguageRegistry.addName(sapBoots, "Sapphire Boots");
+
+		//names silver
+
+		LanguageRegistry.addName(silPick, "Silver Pickaxe");
+		LanguageRegistry.addName(silAxe, "Silver Axe");
+		LanguageRegistry.addName(silHoe, "Silver Hoe");
+		LanguageRegistry.addName(silShovel, "Silver Shovel");
+		LanguageRegistry.addName(silSword, "Silver Sword");
+		LanguageRegistry.addName(silIngot, "Silver Ingot");
+		LanguageRegistry.addName(silHelmet, "Silver Helmet");
+		LanguageRegistry.addName(silChest, "Silver Chestplate");
+		LanguageRegistry.addName(silLeggings, "Silver Leggings");
+		LanguageRegistry.addName(silBoots, "Silver Boots");
+
+		//names copper
+
+		LanguageRegistry.addName(copPick, "Copper Pickaxe");
+		LanguageRegistry.addName(copAxe, "Copper Axe");
+		LanguageRegistry.addName(copHoe, "Copper Hoe");
+		LanguageRegistry.addName(copShovel, "Copper Shovel");
+		LanguageRegistry.addName(copSword, "Copper Sword");
+		LanguageRegistry.addName(copIngot, "Copper Ingot");
+		LanguageRegistry.addName(copHelmet, "Copper Helmet");
+		LanguageRegistry.addName(copChest, "Copper Chestplate");
+		LanguageRegistry.addName(copLeggings, "Copper Leggings");
+		LanguageRegistry.addName(copBoots, "Copper Boots");
+
+		//names lead
+
+		LanguageRegistry.addName(leadPick, "Lead Pickaxe");
+		LanguageRegistry.addName(leadAxe, "Lead Axe");
+		LanguageRegistry.addName(leadHoe, "Lead Hoe");
+		LanguageRegistry.addName(leadShovel, "Lead Shovel");
+		LanguageRegistry.addName(leadSword, "Lead Sword");
+		LanguageRegistry.addName(leadIngot, "Lead Ingot");
+		LanguageRegistry.addName(leadHelmet, "Lead Helmet");
+		LanguageRegistry.addName(leadChest, "Lead Chestplate");
+		LanguageRegistry.addName(leadLeggings, "Lead Leggings");
+		LanguageRegistry.addName(leadBoots, "Lead Boots");
+
+		//names tin
+
+		LanguageRegistry.addName(tinPick, "Tin Pickaxe");
+		LanguageRegistry.addName(tinAxe, "Tin Axe");
+		LanguageRegistry.addName(tinHoe, "Tin Hoe");
+		LanguageRegistry.addName(tinShovel, "Tin Shovel");
+		LanguageRegistry.addName(tinSword, "Tin Sword");
+		LanguageRegistry.addName(tinIngot, "Tin Ingot");
+		LanguageRegistry.addName(tinHelmet, "Tin Helmet");
+		LanguageRegistry.addName(tinChest, "Tin Chestplate");
+		LanguageRegistry.addName(tinLeggings, "Tin Leggings");
+		LanguageRegistry.addName(tinBoots, "Tin Boots");
+
+		//names aluminum
+
+		LanguageRegistry.addName(aluPick, "Aluminum Pickaxe");
+		LanguageRegistry.addName(aluAxe, "Aluminum Axe");
+		LanguageRegistry.addName(aluHoe, "Aluminum Hoe");
+		LanguageRegistry.addName(aluShovel, "Aluminum Shovel");
+		LanguageRegistry.addName(aluSword, "Aluminum Sword");
+		LanguageRegistry.addName(aluIngot, "Aluminum Ingot");
+		LanguageRegistry.addName(aluHelmet, "Aluminum Helmet");
+		LanguageRegistry.addName(aluChest, "Aluminum Chestplate");
+		LanguageRegistry.addName(aluLeggings, "Aluminum Leggings");
+		LanguageRegistry.addName(aluBoots, "Aluminum Boots");
+
+		//names graphene
+
+		LanguageRegistry.addName(graPick, "Graphene Pickaxe");
+		LanguageRegistry.addName(graAxe, "Graphene Axe");
+		LanguageRegistry.addName(graHoe, "Graphene Hoe");
+		LanguageRegistry.addName(graShovel, "Graphene Shovel");
+		LanguageRegistry.addName(graSword, "Graphene Sword");
+		LanguageRegistry.addName(graIngot, "Graphene Ingot");
+		LanguageRegistry.addName(graHelmet, "Graphene Helmet");
+		LanguageRegistry.addName(graChest, "Graphene Chestplate");
+		LanguageRegistry.addName(graLeggings, "Graphene Leggings");
+		LanguageRegistry.addName(graBoots, "Graphene Boots");
+
+		//names amethyst
+
+		LanguageRegistry.addName(amePick, "Amethyst Pickaxe");
+		LanguageRegistry.addName(ameAxe, "Amethyst Axe");
+		LanguageRegistry.addName(ameHoe, "Amethyst Hoe");
+		LanguageRegistry.addName(ameShovel, "Amethyst Shovel");
+		LanguageRegistry.addName(ameSword, "Amethyst Sword");
+		LanguageRegistry.addName(ameIngot, "Amethyst Ingot");
+		LanguageRegistry.addName(ameHelmet, "Amethyst Helmet");
+		LanguageRegistry.addName(ameChest, "Amethyst Chestplate");
+		LanguageRegistry.addName(ameLeggings, "Amethyst Leggings");
+		LanguageRegistry.addName(ameBoots, "Amethyst Boots");
+
+		//names citrine
+
+		LanguageRegistry.addName(citPick, "Citrine Pickaxe");
+		LanguageRegistry.addName(citAxe, "Citrine Axe");
+		LanguageRegistry.addName(citHoe, "Citrine Hoe");
+		LanguageRegistry.addName(citShovel, "Citrine Shovel");
+		LanguageRegistry.addName(citSword, "Citrine Sword");
+		LanguageRegistry.addName(citIngot, "Citrine Ingot");
+		LanguageRegistry.addName(citHelmet, "Citrine Helmet");
+		LanguageRegistry.addName(citChest, "Citrine Chestplate");
+		LanguageRegistry.addName(citLeggings, "Citrine Leggings");
+		LanguageRegistry.addName(citBoots, "Citrine Boots");
+
+		//names rose quartz
+
+		LanguageRegistry.addName(rosePick, "Rose Quartz Pickaxe");
+		LanguageRegistry.addName(roseAxe, "Rose Quartz Axe");
+		LanguageRegistry.addName(roseHoe, "Rose Quartz Hoe");
+		LanguageRegistry.addName(roseShovel, "Rose Quartz Shovel");
+		LanguageRegistry.addName(roseSword, "Rose Quartz Sword");
+		LanguageRegistry.addName(roseIngot, "Rose Quartz Ingot");
+		LanguageRegistry.addName(roseHelmet, "Rose Quartz Helmet");
+		LanguageRegistry.addName(roseChest, "Rose Quartz Chestplate");
+		LanguageRegistry.addName(roseLeggings, "Rose Quartz Leggings");
+		LanguageRegistry.addName(roseBoots, "Rose Quartz Boots");
+
+		//names tiger
+
+		LanguageRegistry.addName(tigPick, "Tiger's Eye Pickaxe");
+		LanguageRegistry.addName(tigAxe, "Tiger's Eye Axe");
+		LanguageRegistry.addName(tigHoe, "Tiger's Eye Hoe");
+		LanguageRegistry.addName(tigShovel, "Tiger's Eye Shovel");
+		LanguageRegistry.addName(tigSword, "Tiger's Eye Sword");
+		LanguageRegistry.addName(tigIngot, "Tiger's Eye Ingot");
+		LanguageRegistry.addName(tigHelmet, "Tiger's Eye Helmet");
+		LanguageRegistry.addName(tigChest, "Tiger's Eye Chestplate");
+		LanguageRegistry.addName(tigLeggings, "Tiger's Eye Leggings");
+		LanguageRegistry.addName(tigBoots, "Tiger's Eye Boots");
+
+		//names tungsten
+
+		LanguageRegistry.addName(tunPick, "Tungsten Pickaxe");
+		LanguageRegistry.addName(tunAxe, "Tungsten Axe");
+		LanguageRegistry.addName(tunHoe, "Tungsten Hoe");
+		LanguageRegistry.addName(tunShovel, "Tungsten Shovel");
+		LanguageRegistry.addName(tunSword, "Tungsten Sword");
+		LanguageRegistry.addName(tunIngot, "Tungsten Ingot");
+		LanguageRegistry.addName(tunHelmet, "Tungsten Helmet");
+		LanguageRegistry.addName(tunChest, "Tungsten Chestplate");
+		LanguageRegistry.addName(tunLeggings, "Tungsten Leggings");
+		LanguageRegistry.addName(tunBoots, "Tungsten Boots");
+
+		//names emerald
+
+		LanguageRegistry.addName(tunPick, "Tungsten Pickaxe");
+		LanguageRegistry.addName(tunAxe, "Tungsten Axe");
+		LanguageRegistry.addName(tunHoe, "Tungsten Hoe");
+		LanguageRegistry.addName(tunShovel, "Tungsten Shovel");
+		LanguageRegistry.addName(tunSword, "Tungsten Sword");
+		LanguageRegistry.addName(tunHelmet, "Tungsten Helmet");
+		LanguageRegistry.addName(tunChest, "Tungsten Chestplate");
+		LanguageRegistry.addName(tunLeggings, "Tungsten Leggings");
+		LanguageRegistry.addName(tunBoots, "Tungsten Boots");
+
 	}
 	
 }

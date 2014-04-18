@@ -43,6 +43,8 @@ public class Hoe extends ItemHoe {
 			this.itemIcon = reg.registerIcon("oremod:tig_hoe");
 		} else if (itemID == Ores.emHoe.itemID) {
 			this.itemIcon = reg.registerIcon("oremod:em_hoe");
+		} else if (itemID == Ores.tunHoe.itemID) {
+			this.itemIcon = reg.registerIcon("oremod:tun_hoe");
 		}
 	}
 }

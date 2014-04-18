@@ -41,6 +41,8 @@ public class Ore extends Block {
 			return Ores.roseOre.blockID;
 		} else if (blockID == Ores.tigOre.blockID) {
 			return Ores.tigOre.blockID;
+		} else if (blockID == Ores.tunOre.blockID) {
+			return Ores.tunOre.blockID;
 		} else {
 			return 0;
 		}
@@ -71,6 +73,8 @@ public class Ore extends Block {
 			this.blockIcon = reg.registerIcon("oremod:rose_ore");
 		} else if (blockID == Ores.tigOre.blockID) {
 			this.blockIcon = reg.registerIcon("oremod:tig_ore");
+		} else if (blockID == Ores.tunOre.blockID) {
+			this.blockIcon = reg.registerIcon("oremod:tun_ore");
 		}
 	}
 }

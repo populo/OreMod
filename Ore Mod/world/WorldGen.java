@@ -41,6 +41,7 @@ public class WorldGen implements IWorldGenerator {
 		this.addOreSpawn(Ores.citOre, world, random, x, y, 16, 16, 6+random.nextInt(4), 75, 0, 100);
 		this.addOreSpawn(Ores.roseOre, world, random, x, y, 16, 16, 5+random.nextInt(4), 75, 0, 100);
 		this.addOreSpawn(Ores.tigOre, world, random, x, y, 16, 16, 5+random.nextInt(4), 75, 0, 100);
+		this.addOreSpawn(Ores.tunOre, world, random, x, y, 16, 16, 4+random.nextInt(3), 7, 0, 50);
 	}
 	
 	private void generateEnd(World world, Random random, int x, int y) {

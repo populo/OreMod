@@ -43,6 +43,8 @@ public class Axe extends ItemAxe {
 			this.itemIcon = reg.registerIcon("oremod:tig_axe");
 		} else if (itemID == Ores.emAxe.itemID) {
 			this.itemIcon = reg.registerIcon("oremod:em_axe");
+		} else if (itemID == Ores.tunAxe.itemID) {
+			this.itemIcon = reg.registerIcon("oremod:tun_axe");
 		}
 	}
 }

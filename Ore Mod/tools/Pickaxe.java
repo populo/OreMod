@@ -43,6 +43,8 @@ public class Pickaxe extends ItemPickaxe {
 			this.itemIcon = reg.registerIcon("oremod:tig_pick");
 		} else if (itemID == Ores.emPick.itemID) {
 			this.itemIcon = reg.registerIcon("oremod:em_pick");
+		} else if (itemID == Ores.tunPick.itemID) {
+			this.itemIcon = reg.registerIcon("oremod:tun_pick");
 		}
 	}
 }
