@@ -39,8 +39,8 @@ public class Shovel extends ItemSpade {
 			this.itemIcon = reg.registerIcon("oremod:cit_shovel");
 		} else if (itemID == Ores.roseShovel.itemID) {
 			this.itemIcon = reg.registerIcon("oremod:rose_shovel");
-		} else if (itemID == Ores.tigShovel.itemID) {
-			this.itemIcon = reg.registerIcon("oremod:tig_shovel");
+		} else if (itemID == Ores.obsShovel.itemID) {
+			this.itemIcon = reg.registerIcon("oremod:obs_shovel");
 		} else if (itemID == Ores.emShovel.itemID) {
 			this.itemIcon = reg.registerIcon("oremod:em_shovel");
 		} else if (itemID == Ores.tunShovel.itemID) {

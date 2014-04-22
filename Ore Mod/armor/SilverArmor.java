@@ -16,22 +16,22 @@ public class SilverArmor extends ItemArmor {
 	
 	public void registerIcons(IconRegister reg) {
 		if (itemID == Ores.silHelmet.itemID) {
-			this.itemIcon = reg.registerIcon("ores:sil_helmet");
+			this.itemIcon = reg.registerIcon("oremod:sil_helmet");
 		} else if (itemID == Ores.silChest.itemID){
-			this.itemIcon = reg.registerIcon("ores:sil_chest");
+			this.itemIcon = reg.registerIcon("oremod:sil_chestplate");
 		} else if (itemID == Ores.silLeggings.itemID) {
-			this.itemIcon = reg.registerIcon("ores:sil_leggings");
+			this.itemIcon = reg.registerIcon("oremod:sil_leggings");
 		} else if (itemID == Ores.silBoots.itemID) {
-			this.itemIcon = reg.registerIcon("ores:sil_boots");
+			this.itemIcon = reg.registerIcon("oremod:sil_boots");
 		}
 	}
 	
 	@Override
 	public String getArmorTexture(ItemStack stack, Entity entity, int slot, int layer) {
 		if (slot == 2) {
-			return "tungsten:textures/armor/silverarmor_2.png";
+			return "oremod:textures/armor/silverarmor_2.png";
 		} else {
-			return "tungsten:textures/armor/silverarmor_1.png";
+			return "oremod:textures/armor/silverarmor_1.png";
 		}
 	}
 }

@@ -21,11 +21,11 @@ import populo.mod.ores.armor.CopperArmor;
 import populo.mod.ores.armor.EmeraldArmor;
 import populo.mod.ores.armor.GrapheneArmor;
 import populo.mod.ores.armor.LeadArmor;
+import populo.mod.ores.armor.ObsidianArmor;
 import populo.mod.ores.armor.RoseQuartzArmor;
 import populo.mod.ores.armor.RubyArmor;
 import populo.mod.ores.armor.SapphireArmor;
 import populo.mod.ores.armor.SilverArmor;
-import populo.mod.ores.armor.TigerEyeArmor;
 import populo.mod.ores.armor.TinArmor;
 import populo.mod.ores.armor.TungstenArmor;
 import populo.mod.ores.blocks.OBlock;
@@ -44,6 +44,7 @@ import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -76,8 +77,8 @@ public class Ores {
 	public static EnumToolMaterial AmethystTools = EnumHelper.addToolMaterial("Amethyst Tools", 3, 2843, 8.2F, 7.9F, 48);
 	public static EnumToolMaterial CitrineTools = EnumHelper.addToolMaterial("Citrine Tools", 2, 2644, 8.4F, 8.3F, 36);
 	public static EnumToolMaterial RoseQuartzTools = EnumHelper.addToolMaterial("Rose Quartz Tools", 1, 1852, 6.2F, 2.5F, 42);
-	public static EnumToolMaterial TigerEyeTools = EnumHelper.addToolMaterial("Tiger's Eye Tools", 3, 1943, 7.5F, 8.6F, 39);
-	public static EnumToolMaterial TungstenTools = EnumHelper.addToolMaterial("Tungsten Tools", 3, 800, 17.0F, 14.0F, 28);
+	public static EnumToolMaterial ObsidianTools = EnumHelper.addToolMaterial("Obsidian Tools",3, 2300, 10.0F, 4.5F, 25);
+	public static EnumToolMaterial TungstenTools = EnumHelper.addToolMaterial("Tungsten Tools", 3, 1562, 17.0F, 14.0F, 28);
 	public static EnumToolMaterial EmeraldTools =  EnumHelper.addToolMaterial("Emerald Tools", 3, 6342, 8.4F, 6.7F, 40);
 	
 	//enum armor
@@ -93,7 +94,7 @@ public class Ores {
 	public static EnumArmorMaterial AmethystArmor = EnumHelper.addArmorMaterial("Amethyst Armor", 36, new int[]{12, 16, 14, 11}, 48);
 	public static EnumArmorMaterial CitrineArmor = EnumHelper.addArmorMaterial("Citrine Armor", 24, new int[]{10, 13, 12, 11}, 36);
 	public static EnumArmorMaterial RoseQuartzArmor = EnumHelper.addArmorMaterial("Rose Quartz Armor", 14, new int[]{5, 6, 8, 4}, 42);
-	public static EnumArmorMaterial TigerEyeArmor = EnumHelper.addArmorMaterial("Tiger's Eye Armor", 25, new int[]{10, 14, 12, 13}, 39);
+	public static EnumArmorMaterial ObsidianArmor = EnumHelper.addArmorMaterial("Obsidian Armor",  40, new int[] {5, 10, 8, 5}, 30);
 	public static EnumArmorMaterial TungstenArmor = EnumHelper.addArmorMaterial("Tungsten Armor", 30, new int[] {3, 8, 7, 5}, 20);
 	public static EnumArmorMaterial EmeraldArmor = EnumHelper.addArmorMaterial("Emerald Armor", 47, new int[]{17, 16, 18, 15}, 40);
 	
@@ -153,8 +154,7 @@ public class Ores {
 	
 	//tiger eye
 	
-	public static Item tigPick, tigAxe, tigHoe, tigShovel, tigSword, tigHelmet, tigChest, tigLeggings, tigBoots, tigIngot;
-	public static Block tigOre, tigBlock;
+	public static Item obsPick, obsAxe, obsHoe, obsShovel, obsSword, obsHelmet, obsChest, obsLeggings, obsBoots, obsIngot;
 
 	//tungsten
 
@@ -185,7 +185,7 @@ public class Ores {
 		ameIngot = new Ingot(6008, 64, Ores.oreModTab).setUnlocalizedName("ameIngot");
 		citIngot = new Ingot(6009, 64, Ores.oreModTab).setUnlocalizedName("citIngot");
 		roseIngot = new Ingot(6010, 64, Ores.oreModTab).setUnlocalizedName("roseIngot");
-		tigIngot = new Ingot(6011, 64, Ores.oreModTab).setUnlocalizedName("tigIngot");
+		obsIngot = new Ingot(6011, 64, Ores.oreModTab).setUnlocalizedName("obsIngot");
 		tunIngot = new Ingot(6129, 64, Ores.oreModTab).setUnlocalizedName("tunIngot");
 		tunMolten = new Ingot(6130, 64, Ores.oreModTab).setUnlocalizedName("tunMI");
 		tunNugget = new Ingot(6169, 64, Ores.oreModTab).setUnlocalizedName("tunNugget");
@@ -203,7 +203,7 @@ public class Ores {
 		amePick = (ItemPickaxe) new Pickaxe(6020, AmethystTools).setUnlocalizedName("amePick");
 		citPick = (ItemPickaxe) new Pickaxe(6021, CitrineTools).setUnlocalizedName("citPick");
 		rosePick = (ItemPickaxe) new Pickaxe(6022, RoseQuartzTools).setUnlocalizedName("rosePick");
-		tigPick = (ItemPickaxe) new Pickaxe(6023, TigerEyeTools).setUnlocalizedName("tigPick");
+		obsPick = (ItemPickaxe) new Pickaxe(6023, ObsidianTools).setUnlocalizedName("obsPick");
 		emPick = (ItemPickaxe) new Pickaxe(6024, EmeraldTools).setUnlocalizedName("emPick");
 		tunPick = (ItemPickaxe) new Pickaxe(6131, TungstenTools).setUnlocalizedName("tunPick");
 
@@ -220,7 +220,7 @@ public class Ores {
 		ameAxe = (ItemAxe) new Axe(6033, AmethystTools).setUnlocalizedName("ameAxe");
 		citAxe = (ItemAxe) new Axe(6034, CitrineTools).setUnlocalizedName("citAxe");
 		roseAxe = (ItemAxe) new Axe(6035, RoseQuartzTools).setUnlocalizedName("roseAxe");
-		tigAxe = (ItemAxe) new Axe(6036, TigerEyeTools).setUnlocalizedName("tigAxe");
+		obsAxe = (ItemAxe) new Axe(6036, ObsidianTools).setUnlocalizedName("obsAxe");
 		emAxe = (ItemAxe) new Axe(6037, EmeraldTools).setUnlocalizedName("emAxe");
 		tunAxe = (ItemAxe) new Axe(6132, TungstenTools).setUnlocalizedName("tunAxe");
 
@@ -237,7 +237,7 @@ public class Ores {
 		ameHoe = (ItemHoe) new Hoe(6046, AmethystTools).setUnlocalizedName("ameHoe");
 		citHoe = (ItemHoe) new Hoe(6047, CitrineTools).setUnlocalizedName("citHoe");
 		roseHoe = (ItemHoe) new Hoe(6048, RoseQuartzTools).setUnlocalizedName("roseHoe");
-		tigHoe = (ItemHoe) new Hoe(6049, TigerEyeTools).setUnlocalizedName("tigHoe");
+		obsHoe = (ItemHoe) new Hoe(6049, ObsidianTools).setUnlocalizedName("obsHoe");
 		emHoe = (ItemHoe) new Hoe(6050, EmeraldTools).setUnlocalizedName("emHoe");
 		tunHoe = (ItemHoe) new Hoe(6133, TungstenTools).setUnlocalizedName("tunHoe");
 
@@ -254,7 +254,7 @@ public class Ores {
 		ameShovel = (ItemSpade) new Shovel(6059, AmethystTools).setUnlocalizedName("ameShovel");
 		citShovel = (ItemSpade) new Shovel(6060, CitrineTools).setUnlocalizedName("citShovel");
 		roseShovel = (ItemSpade) new Shovel(6061, RoseQuartzTools).setUnlocalizedName("roseShovel");
-		tigShovel = (ItemSpade) new Shovel(6062, TigerEyeTools).setUnlocalizedName("tigShovel");
+		obsShovel = (ItemSpade) new Shovel(6062, ObsidianTools).setUnlocalizedName("obsShovel");
 		emShovel = (ItemSpade) new Shovel(6063, EmeraldTools).setUnlocalizedName("emShovel");
 		tunShovel = (ItemSpade) new Shovel(6163, TungstenTools).setUnlocalizedName("tunShovel");
 
@@ -271,7 +271,7 @@ public class Ores {
 		ameSword = (ItemSword) new Sword(6072, AmethystTools).setUnlocalizedName("ameSword");
 		citSword = (ItemSword) new Sword(6073, CitrineTools).setUnlocalizedName("citSword");
 		roseSword = (ItemSword) new Sword(6074, RoseQuartzTools).setUnlocalizedName("roseSword");
-		tigSword = (ItemSword) new Sword(6075, TigerEyeTools).setUnlocalizedName("tigSword");
+		obsSword = (ItemSword) new Sword(6075, ObsidianTools).setUnlocalizedName("obsSword");
 		emSword = (ItemSword) new Sword(6076, EmeraldTools).setUnlocalizedName("emSword");
 		tunSword = (ItemSword) new Sword(6164, TungstenTools).setUnlocalizedName("tunSword");
 		
@@ -288,7 +288,7 @@ public class Ores {
 		ameHelmet = (ItemArmor) new AmethystArmor(6085, AmethystArmor, 5, 0).setUnlocalizedName("ameHelmet");
 		citHelmet = (ItemArmor) new CitrineArmor(6086, CitrineArmor, 5, 0).setUnlocalizedName("citHelmet");
 		roseHelmet = (ItemArmor) new RoseQuartzArmor(6087, RoseQuartzArmor, 5, 0).setUnlocalizedName("roseHelmet");
-		tigHelmet = (ItemArmor) new TigerEyeArmor(6088, TigerEyeArmor, 5, 0).setUnlocalizedName("tigHelmet");
+		obsHelmet = (ItemArmor) new ObsidianArmor(6088, ObsidianArmor, 5, 0).setUnlocalizedName("obsHelmet");
 		emHelmet = (ItemArmor) new EmeraldArmor(6089, EmeraldArmor, 5, 0).setUnlocalizedName("emHelmet");
 		tunHelmet = (ItemArmor) new TungstenArmor(6165, TungstenArmor, 5, 0).setUnlocalizedName("tunHelmet");
 		
@@ -305,7 +305,7 @@ public class Ores {
 		ameChest = (ItemArmor) new AmethystArmor(6098, AmethystArmor, 5, 1).setUnlocalizedName("ameChest");
 		citChest = (ItemArmor) new CitrineArmor(6099, CitrineArmor, 5, 1).setUnlocalizedName("citChest");
 		roseChest = (ItemArmor) new RoseQuartzArmor(6100, RoseQuartzArmor, 5, 1).setUnlocalizedName("roseChest");
-		tigChest = (ItemArmor) new TigerEyeArmor(6101, TigerEyeArmor, 5, 1).setUnlocalizedName("tigChest");
+		obsChest = (ItemArmor) new ObsidianArmor(6101, ObsidianArmor, 5, 1).setUnlocalizedName("obsChest");
 		emChest = (ItemArmor) new EmeraldArmor(6102, EmeraldArmor, 5, 1).setUnlocalizedName("emChest");
 		tunChest = (ItemArmor) new TungstenArmor(6166, TungstenArmor, 5, 1).setUnlocalizedName("tunChest");
 		
@@ -322,7 +322,7 @@ public class Ores {
 		ameLeggings = (ItemArmor) new AmethystArmor(6111, AmethystArmor, 5, 2).setUnlocalizedName("ameLeggings");
 		citLeggings = (ItemArmor) new CitrineArmor(6112, CitrineArmor, 5, 2).setUnlocalizedName("citLeggings");
 		roseLeggings = (ItemArmor) new RoseQuartzArmor(6113, RoseQuartzArmor, 5, 2).setUnlocalizedName("roseLeggings");
-		tigLeggings = (ItemArmor) new TigerEyeArmor(6114, TigerEyeArmor, 5, 2).setUnlocalizedName("tigLeggings");
+		obsLeggings = (ItemArmor) new ObsidianArmor(6114, ObsidianArmor, 5, 2).setUnlocalizedName("obsLeggings");
 		emLeggings = (ItemArmor) new EmeraldArmor(6115, EmeraldArmor, 5, 2).setUnlocalizedName("emLeggings");
 		tunLeggings = (ItemArmor) new TungstenArmor(6167, TungstenArmor, 5, 2).setUnlocalizedName("tunLeggings");
 		
@@ -339,7 +339,7 @@ public class Ores {
 		ameBoots = (ItemArmor) new AmethystArmor(6124, AmethystArmor, 5, 3).setUnlocalizedName("ameBoots");
 		citBoots = (ItemArmor) new CitrineArmor(6125, CitrineArmor, 5, 3).setUnlocalizedName("citBoots");
 		roseBoots = (ItemArmor) new RoseQuartzArmor(6126, RoseQuartzArmor, 5, 3).setUnlocalizedName("roseBoots");
-		tigBoots = (ItemArmor) new TigerEyeArmor(6127, TigerEyeArmor, 5, 3).setUnlocalizedName("tigBoots");
+		obsBoots = (ItemArmor) new ObsidianArmor(6127, ObsidianArmor, 5, 3).setUnlocalizedName("obsBoots");
 		emBoots = (ItemArmor) new EmeraldArmor(6128, EmeraldArmor, 5, 3).setUnlocalizedName("emBoots");
 		tunBoots = (ItemArmor) new TungstenArmor(6168, TungstenArmor, 5, 3).setUnlocalizedName("tunBoots");
 		
@@ -356,7 +356,6 @@ public class Ores {
 		ameOre = new Ore(3509, "ameOre").setUnlocalizedName("ameOre").setHardness(7.3F);
 		citOre = new Ore(3510, "citOre").setUnlocalizedName("citOre").setHardness(8.4F);
 		roseOre = new Ore(3511, "roseOre").setUnlocalizedName("roseOre").setHardness(8.5F);
-		tigOre = new Ore(3512, "tigOre").setUnlocalizedName("tigOre").setHardness(7.8F);
 		tunOre = new Ore(3525, "tunOre").setUnlocalizedName("tunOre").setHardness(5.0F);
 		
 		
@@ -373,13 +372,12 @@ public class Ores {
 		ameBlock = new OBlock(3521, "ameBlock").setUnlocalizedName("ameBlock").setHardness(7.1F);
 		citBlock = new OBlock(3522, "citBlock").setUnlocalizedName("citBlock").setHardness(8.2F);
 		roseBlock = new OBlock(3523, "roseBlock").setUnlocalizedName("roseBlock").setHardness(9.1F);
-		tigBlock = new OBlock(3524, "tigBlock").setUnlocalizedName("tigBlock").setHardness(10.4F);
 		tunBlock = new OBlock(3526, "tunBlock").setUnlocalizedName("tunBlock").setHardness(8.0F);
 		tunMoltenBlock = new OBlock(3527, "tunMBlock").setUnlocalizedName("tunMBlock").setHardness(3.5F);
 		
 		//grass seeds
 		
-		MinecraftForge.addGrassSeed(new ItemStack(Ores.tunNugget), 2);
+		MinecraftForge.addGrassSeed(new ItemStack(Ores.tunNugget), 1);
 		
 		/*
 		 * ADD TEXTURES TO TUNGSTEN
@@ -413,7 +411,7 @@ public class Ores {
 		GameRegistry.addSmelting(Ores.ameOre.blockID, new ItemStack(Ores.ameIngot, 1), 5.0F);
 		GameRegistry.addSmelting(Ores.citOre.blockID, new ItemStack(Ores.citIngot, 1), 5.0F);
 		GameRegistry.addSmelting(Ores.roseOre.blockID, new ItemStack(Ores.roseIngot, 1), 5.0F);
-		GameRegistry.addSmelting(Ores.tigOre.blockID, new ItemStack(Ores.tigIngot, 1), 5.0F);
+		GameRegistry.addSmelting(Block.obsidian.blockID, new ItemStack(Ores.obsIngot, 1), 5.0F);
 		GameRegistry.addSmelting(Ores.tunIngot.itemID, new ItemStack(Ores.tunMolten, 1), 7.0F);
 		GameRegistry.addSmelting(Ores.tunOre.blockID, new ItemStack(Ores.tunMoltenBlock, 1), 7.0F);
 
@@ -489,11 +487,8 @@ public class Ores {
 		GameRegistry.addRecipe(new ItemStack(Ores.roseIngot, 9), new Object[] {
 			"#", '#', Ores.roseBlock
 		});
-		GameRegistry.addRecipe(new ItemStack(Ores.tigBlock, 1), new Object[] {
-			"###", "###", "###", '#', Ores.tigIngot
-		});
-		GameRegistry.addRecipe(new ItemStack(Ores.tigIngot, 9), new Object[] {
-			"#", '#', Ores.tigBlock
+		GameRegistry.addRecipe(new ItemStack(Block.obsidian, 1), new Object[] {
+			"###", "###", "###", '#', Ores.obsIngot
 		});
 		GameRegistry.addRecipe(new ItemStack(Ores.tunBlock, 1), new Object[] {
 			"###", "###", "###", '#', Ores.tunIngot
@@ -908,40 +903,40 @@ public class Ores {
 			"# #", "# #", '#', Ores.roseIngot
 		});
 		
-		//tiger eye
+		//obsidian
 		
-		GameRegistry.addRecipe(new ItemStack(Ores.tigSword, 1), new Object[] {
-			"#", "#", "s", '#', Ores.tigIngot, 's', Item.stick
+		GameRegistry.addRecipe(new ItemStack(Ores.obsSword, 1), new Object[] {
+			"#", "#", "s", '#', Ores.obsIngot, 's', Item.stick
 		});
-		GameRegistry.addRecipe(new ItemStack(Ores.tigHoe, 1), new Object[] {
-			"## ", " s ", " s ", '#', Ores.tigIngot, 's', Item.stick
+		GameRegistry.addRecipe(new ItemStack(Ores.obsHoe, 1), new Object[] {
+			"## ", " s ", " s ", '#', Ores.obsIngot, 's', Item.stick
 		});
-		GameRegistry.addRecipe(new ItemStack(Ores.tigHoe, 1), new Object[] {
-			" ##", " s ", " s ", '#', Ores.tigIngot, 's', Item.stick
+		GameRegistry.addRecipe(new ItemStack(Ores.obsHoe, 1), new Object[] {
+			" ##", " s ", " s ", '#', Ores.obsIngot, 's', Item.stick
 		});
-		GameRegistry.addRecipe(new ItemStack(Ores.tigShovel, 1), new Object[] {
-			"#", "s", "s", '#', Ores.tigIngot, 's', Item.stick
+		GameRegistry.addRecipe(new ItemStack(Ores.obsShovel, 1), new Object[] {
+			"#", "s", "s", '#', Ores.obsIngot, 's', Item.stick
 		});
-		GameRegistry.addRecipe(new ItemStack(Ores.tigPick, 1), new Object[] {
-			"###", "s", "s", '#', Ores.tigIngot, 's', Item.stick
+		GameRegistry.addRecipe(new ItemStack(Ores.obsPick, 1), new Object[] {
+			"###", "s", "s", '#', Ores.obsIngot, 's', Item.stick
 		});
-		GameRegistry.addRecipe(new ItemStack(Ores.tigAxe, 1), new Object[] {
-			"## ", "#s ", " s ", '#', Ores.tigIngot, 's', Item.stick
+		GameRegistry.addRecipe(new ItemStack(Ores.obsAxe, 1), new Object[] {
+			"## ", "#s ", " s ", '#', Ores.obsIngot, 's', Item.stick
 		});
-		GameRegistry.addRecipe(new ItemStack(Ores.tigHoe, 1), new Object[] {
-			" ##", " s#", " s ", '#', Ores.tigIngot, 's', Item.stick
+		GameRegistry.addRecipe(new ItemStack(Ores.obsHoe, 1), new Object[] {
+			" ##", " s#", " s ", '#', Ores.obsIngot, 's', Item.stick
 		});
-		GameRegistry.addRecipe(new ItemStack(Ores.tigHelmet, 1), new Object[] {
-			"###", "# #", '#', Ores.tigIngot
+		GameRegistry.addRecipe(new ItemStack(Ores.obsHelmet, 1), new Object[] {
+			"###", "# #", '#', Ores.obsIngot
 		});
-		GameRegistry.addRecipe(new ItemStack(Ores.tigChest, 1), new Object[] {
-			"# #", "###", "###", '#', Ores.tigIngot
+		GameRegistry.addRecipe(new ItemStack(Ores.obsChest, 1), new Object[] {
+			"# #", "###", "###", '#', Ores.obsIngot
 		});
-		GameRegistry.addRecipe(new ItemStack(Ores.tigLeggings, 1), new Object[] {
-			"###", "# #", "# #", '#', Ores.tigIngot
+		GameRegistry.addRecipe(new ItemStack(Ores.obsLeggings, 1), new Object[] {
+			"###", "# #", "# #", '#', Ores.obsIngot
 		});
-		GameRegistry.addRecipe(new ItemStack(Ores.tigBoots, 1), new Object[] {
-			"# #", "# #", '#', Ores.tigIngot
+		GameRegistry.addRecipe(new ItemStack(Ores.obsBoots, 1), new Object[] {
+			"# #", "# #", '#', Ores.obsIngot
 		});
 		
 		//emerald
@@ -1104,7 +1099,7 @@ public class Ores {
 		LanguageRegistry.addName(aluAxe, "Aluminum Axe");
 		LanguageRegistry.addName(aluHoe, "Aluminum Hoe");
 		LanguageRegistry.addName(aluShovel, "Aluminum Shovel");
-		LanguageRegistry.addName(aluSword, "Aluminum Sword");
+		LanguageRegistry.addName(aluSword, "Baseball Bat");
 		LanguageRegistry.addName(aluIngot, "Aluminum Ingot");
 		LanguageRegistry.addName(aluHelmet, "Aluminum Helmet");
 		LanguageRegistry.addName(aluChest, "Aluminum Chestplate");
@@ -1165,16 +1160,16 @@ public class Ores {
 
 		//names tiger
 
-		LanguageRegistry.addName(tigPick, "Tiger's Eye Pickaxe");
-		LanguageRegistry.addName(tigAxe, "Tiger's Eye Axe");
-		LanguageRegistry.addName(tigHoe, "Tiger's Eye Hoe");
-		LanguageRegistry.addName(tigShovel, "Tiger's Eye Shovel");
-		LanguageRegistry.addName(tigSword, "Tiger's Eye Sword");
-		LanguageRegistry.addName(tigIngot, "Tiger's Eye Ingot");
-		LanguageRegistry.addName(tigHelmet, "Tiger's Eye Helmet");
-		LanguageRegistry.addName(tigChest, "Tiger's Eye Chestplate");
-		LanguageRegistry.addName(tigLeggings, "Tiger's Eye Leggings");
-		LanguageRegistry.addName(tigBoots, "Tiger's Eye Boots");
+		LanguageRegistry.addName(obsPick, "Obsidian Pickaxe");
+		LanguageRegistry.addName(obsAxe, "Obsidian Axe");
+		LanguageRegistry.addName(obsHoe, "Obsidian Hoe");
+		LanguageRegistry.addName(obsShovel, "Obsidian Shovel");
+		LanguageRegistry.addName(obsSword, "Obsidian Sword");
+		LanguageRegistry.addName(obsIngot, "Obsidian Ingot");
+		LanguageRegistry.addName(obsHelmet, "Obsidian Helmet");
+		LanguageRegistry.addName(obsChest, "Obsidian Chestplate");
+		LanguageRegistry.addName(obsLeggings, "Obsidian Leggings");
+		LanguageRegistry.addName(obsBoots, "Obsidian Boots");
 
 		//names tungsten
 
@@ -1188,6 +1183,7 @@ public class Ores {
 		LanguageRegistry.addName(tunChest, "Tungsten Chestplate");
 		LanguageRegistry.addName(tunLeggings, "Tungsten Leggings");
 		LanguageRegistry.addName(tunBoots, "Tungsten Boots");
+		LanguageRegistry.addName(tunMolten, "Molten Tungsten Ingot");
 
 		//names emerald
 
@@ -1201,6 +1197,11 @@ public class Ores {
 		LanguageRegistry.addName(tunLeggings, "Tungsten Leggings");
 		LanguageRegistry.addName(tunBoots, "Tungsten Boots");
 
+	}
+
+	@EventHandler
+	public void postInit(FMLPostInitializationEvent event) {
+		
 	}
 	
 }

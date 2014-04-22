@@ -15,13 +15,13 @@ public class TungstenArmor extends ItemArmor {
 	
 	public void registerIcons(IconRegister reg) {
 		if (itemID == Ores.tunHelmet.itemID) {
-			this.itemIcon = reg.registerIcon("tungsten:helmet");
+			this.itemIcon = reg.registerIcon("oremod:tun_helmet");
 		} else if (itemID == Ores.tunChest.itemID){
-			this.itemIcon = reg.registerIcon("tungsten:chestplate");
+			this.itemIcon = reg.registerIcon("oremod:tun_chestplate");
 		} else if (itemID == Ores.tunLeggings.itemID) {
-			this.itemIcon = reg.registerIcon("tungsten:leggings");
+			this.itemIcon = reg.registerIcon("oremod:tun_leggings");
 		} else if (itemID == Ores.tunBoots.itemID) {
-			this.itemIcon = reg.registerIcon("tungsten:boots");
+			this.itemIcon = reg.registerIcon("oremod:tun_boots");
 		}
 	}
 	

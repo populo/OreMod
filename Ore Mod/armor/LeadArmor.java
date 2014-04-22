@@ -16,22 +16,22 @@ public class LeadArmor extends ItemArmor {
 	
 	public void registerIcons(IconRegister reg) {
 		if (itemID == Ores.leadHelmet.itemID) {
-			this.itemIcon = reg.registerIcon("ores:lead_helmet");
+			this.itemIcon = reg.registerIcon("oremod:lead_helmet");
 		} else if (itemID == Ores.leadChest.itemID){
-			this.itemIcon = reg.registerIcon("ores:lead_chest");
+			this.itemIcon = reg.registerIcon("oremod:lead_chestplate");
 		} else if (itemID == Ores.leadLeggings.itemID) {
-			this.itemIcon = reg.registerIcon("ores:lead_leggings");
+			this.itemIcon = reg.registerIcon("oremod:lead_leggings");
 		} else if (itemID == Ores.leadBoots.itemID) {
-			this.itemIcon = reg.registerIcon("ores:lead_boots");
+			this.itemIcon = reg.registerIcon("oremod:lead_boots");
 		}
 	}
 	
 	@Override
 	public String getArmorTexture(ItemStack stack, Entity entity, int slot, int layer) {
 		if (slot == 2) {
-			return "tungsten:textures/armor/leadarmor_2.png";
+			return "oremod:textures/armor/leadarmor_2.png";
 		} else {
-			return "tungsten:textures/armor/leadarmor_1.png";
+			return "oremod:textures/armor/leadarmor_1.png";
 		}
 	}
 }

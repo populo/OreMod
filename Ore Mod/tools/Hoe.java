@@ -39,8 +39,8 @@ public class Hoe extends ItemHoe {
 			this.itemIcon = reg.registerIcon("oremod:cit_hoe");
 		} else if (itemID == Ores.roseHoe.itemID) {
 			this.itemIcon = reg.registerIcon("oremod:rose_hoe");
-		} else if (itemID == Ores.tigHoe.itemID) {
-			this.itemIcon = reg.registerIcon("oremod:tig_hoe");
+		} else if (itemID == Ores.obsHoe.itemID) {
+			this.itemIcon = reg.registerIcon("oremod:obs_hoe");
 		} else if (itemID == Ores.emHoe.itemID) {
 			this.itemIcon = reg.registerIcon("oremod:em_hoe");
 		} else if (itemID == Ores.tunHoe.itemID) {

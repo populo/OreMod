@@ -16,22 +16,22 @@ public class AmethystArmor extends ItemArmor {
 	
 	public void registerIcons(IconRegister reg) {
 		if (itemID == Ores.ameHelmet.itemID) {
-			this.itemIcon = reg.registerIcon("ores:ame_helmet");
+			this.itemIcon = reg.registerIcon("oremod:ame_helmet");
 		} else if (itemID == Ores.ameChest.itemID){
-			this.itemIcon = reg.registerIcon("ores:ame_chest");
+			this.itemIcon = reg.registerIcon("oremod:ame_chestplate");
 		} else if (itemID == Ores.ameLeggings.itemID) {
-			this.itemIcon = reg.registerIcon("ores:ame_leggings");
+			this.itemIcon = reg.registerIcon("oremod:ame_leggings");
 		} else if (itemID == Ores.ameBoots.itemID) {
-			this.itemIcon = reg.registerIcon("ores:ame_boots");
+			this.itemIcon = reg.registerIcon("oremod:ame_boots");
 		}
 	}
 	
 	@Override
 	public String getArmorTexture(ItemStack stack, Entity entity, int slot, int layer) {
 		if (slot == 2) {
-			return "tungsten:textures/armor/amethystarmor_2.png";
+			return "oremod:textures/armor/amethystarmor_2.png";
 		} else {
-			return "tungsten:textures/armor/amethystarmor_1.png";
+			return "oremod:textures/armor/amethystarmor_1.png";
 		}
 	}
 }

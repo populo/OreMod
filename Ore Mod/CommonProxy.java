@@ -89,13 +89,6 @@ public class CommonProxy {
 		LanguageRegistry.addName(Ores.roseOre, "Rose Quartz Ore");
 		LanguageRegistry.addName(Ores.roseBlock, "Rose Quartz Block");
 		
-		//tiger eye
-		
-		GameRegistry.registerBlock(Ores.tigOre, "Tiger's Eye Ore");
-		GameRegistry.registerBlock(Ores.tigBlock, "Tiger's Eye Block");
-		LanguageRegistry.addName(Ores.tigOre, "Tiger's Eye Ore");
-		LanguageRegistry.addName(Ores.tigBlock, "Tiger's Eye Block");
-		
 		//tungsten
 		
 		GameRegistry.registerBlock(Ores.tunOre, "Tungsten Ore");

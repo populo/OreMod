@@ -39,8 +39,6 @@ public class OBlock extends Block {
 			return Ores.citBlock.blockID;
 		} else if (blockID == Ores.roseBlock.blockID) {
 			return Ores.roseBlock.blockID;
-		} else if (blockID == Ores.tigBlock.blockID) {
-			return Ores.tigBlock.blockID;
 		} else if (blockID == Ores.tunBlock.blockID) {
 			return Ores.tunBlock.blockID;
 		} else if (blockID == Ores.tunMoltenBlock.blockID) {
@@ -73,8 +71,6 @@ public class OBlock extends Block {
 			this.blockIcon = reg.registerIcon("oremod:cit_block");
 		} else if (blockID == Ores.roseBlock.blockID) {
 			this.blockIcon = reg.registerIcon("oremod:rose_block");
-		} else if (blockID == Ores.tigBlock.blockID) {
-			this.blockIcon = reg.registerIcon("oremod:tig_block");
 		} else if (blockID == Ores.tunBlock.blockID) {
 			this.blockIcon = reg.registerIcon("oremod:tun_block");
 		} else if (blockID == Ores.tunMoltenBlock.blockID) {

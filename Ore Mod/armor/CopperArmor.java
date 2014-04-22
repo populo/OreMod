@@ -16,22 +16,22 @@ public class CopperArmor extends ItemArmor {
 	
 	public void registerIcons(IconRegister reg) {
 		if (itemID == Ores.copHelmet.itemID) {
-			this.itemIcon = reg.registerIcon("ores:cop_helmet");
+			this.itemIcon = reg.registerIcon("oremod:cop_helmet");
 		} else if (itemID == Ores.copChest.itemID){
-			this.itemIcon = reg.registerIcon("ores:cop_chest");
+			this.itemIcon = reg.registerIcon("oremod:cop_chestplate");
 		} else if (itemID == Ores.copLeggings.itemID) {
-			this.itemIcon = reg.registerIcon("ores:cop_leggings");
+			this.itemIcon = reg.registerIcon("oremod:cop_leggings");
 		} else if (itemID == Ores.copBoots.itemID) {
-			this.itemIcon = reg.registerIcon("ores:cop_boots");
+			this.itemIcon = reg.registerIcon("oremod:cop_boots");
 		}
 	}
 	
 	@Override
 	public String getArmorTexture(ItemStack stack, Entity entity, int slot, int layer) {
 		if (slot == 2) {
-			return "tungsten:textures/armor/copperarmor_2.png";
+			return "oremod:textures/armor/copperarmor_2.png";
 		} else {
-			return "tungsten:textures/armor/copperarmor_1.png";
+			return "oremod:textures/armor/copperarmor_1.png";
 		}
 	}
 }

@@ -39,8 +39,8 @@ public class Sword extends ItemSword {
 			this.itemIcon = reg.registerIcon("oremod:cit_sword");
 		} else if (itemID == Ores.roseSword.itemID) {
 			this.itemIcon = reg.registerIcon("oremod:rose_sword");
-		} else if (itemID == Ores.tigSword.itemID) {
-			this.itemIcon = reg.registerIcon("oremod:tig_sword");
+		} else if (itemID == Ores.obsSword.itemID) {
+			this.itemIcon = reg.registerIcon("oremod:obs_sword");
 		} else if (itemID == Ores.emSword.itemID) {
 			this.itemIcon = reg.registerIcon("oremod:em_sword");
 		} else if (itemID == Ores.tunSword.itemID) {

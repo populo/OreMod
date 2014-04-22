@@ -16,22 +16,22 @@ public class TinArmor extends ItemArmor {
 	
 	public void registerIcons(IconRegister reg) {
 		if (itemID == Ores.tinHelmet.itemID) {
-			this.itemIcon = reg.registerIcon("ores:tin_helmet");
+			this.itemIcon = reg.registerIcon("oremod:tin_helmet");
 		} else if (itemID == Ores.tinChest.itemID){
-			this.itemIcon = reg.registerIcon("ores:tin_chest");
+			this.itemIcon = reg.registerIcon("oremod:tin_chestplate");
 		} else if (itemID == Ores.tinLeggings.itemID) {
-			this.itemIcon = reg.registerIcon("ores:tin_leggings");
+			this.itemIcon = reg.registerIcon("oremod:tin_leggings");
 		} else if (itemID == Ores.tinBoots.itemID) {
-			this.itemIcon = reg.registerIcon("ores:tin_boots");
+			this.itemIcon = reg.registerIcon("oremod:tin_boots");
 		}
 	}
 	
 	@Override
 	public String getArmorTexture(ItemStack stack, Entity entity, int slot, int layer) {
 		if (slot == 2) {
-			return "tungsten:textures/armor/tinarmor_2.png";
+			return "oremod:textures/armor/tinarmor_2.png";
 		} else {
-			return "tungsten:textures/armor/tinarmor_1.png";
+			return "oremod:textures/armor/tinarmor_1.png";
 		}
 	}
 }

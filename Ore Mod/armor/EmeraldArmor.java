@@ -16,22 +16,22 @@ public class EmeraldArmor extends ItemArmor {
 	
 	public void registerIcons(IconRegister reg) {
 		if (itemID == Ores.emHelmet.itemID) {
-			this.itemIcon = reg.registerIcon("ores:em_helmet");
+			this.itemIcon = reg.registerIcon("oremod:em_helmet");
 		} else if (itemID == Ores.emChest.itemID){
-			this.itemIcon = reg.registerIcon("ores:em_chest");
+			this.itemIcon = reg.registerIcon("oremod:em_chestplate");
 		} else if (itemID == Ores.emLeggings.itemID) {
-			this.itemIcon = reg.registerIcon("ores:em_leggings");
+			this.itemIcon = reg.registerIcon("oremod:em_leggings");
 		} else if (itemID == Ores.emBoots.itemID) {
-			this.itemIcon = reg.registerIcon("ores:em_boots");
+			this.itemIcon = reg.registerIcon("oremod:em_boots");
 		}
 	}
 	
 	@Override
 	public String getArmorTexture(ItemStack stack, Entity entity, int slot, int layer) {
 		if (slot == 2) {
-			return "tungsten:textures/armor/emeraldarmor_2.png";
+			return "oremod:textures/armor/emeraldarmor_2.png";
 		} else {
-			return "tungsten:textures/armor/emeraldarmor_1.png";
+			return "oremod:textures/armor/emeraldarmor_1.png";
 		}
 	}
 }

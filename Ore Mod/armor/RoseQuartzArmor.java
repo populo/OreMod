@@ -16,22 +16,22 @@ public class RoseQuartzArmor extends ItemArmor {
 	
 	public void registerIcons(IconRegister reg) {
 		if (itemID == Ores.roseHelmet.itemID) {
-			this.itemIcon = reg.registerIcon("ores:rose_helmet");
+			this.itemIcon = reg.registerIcon("oremod:rose_helmet");
 		} else if (itemID == Ores.roseChest.itemID){
-			this.itemIcon = reg.registerIcon("ores:rose_chest");
+			this.itemIcon = reg.registerIcon("oremod:rose_chestplate");
 		} else if (itemID == Ores.roseLeggings.itemID) {
-			this.itemIcon = reg.registerIcon("ores:rose_leggings");
+			this.itemIcon = reg.registerIcon("oremod:rose_leggings");
 		} else if (itemID == Ores.roseBoots.itemID) {
-			this.itemIcon = reg.registerIcon("ores:rose_boots");
+			this.itemIcon = reg.registerIcon("oremod:rose_boots");
 		}
 	}
 	
 	@Override
 	public String getArmorTexture(ItemStack stack, Entity entity, int slot, int layer) {
 		if (slot == 2) {
-			return "tungsten:textures/armor/rosearmor_2.png";
+			return "oremod:textures/armor/rosearmor_2.png";
 		} else {
-			return "tungsten:textures/armor/rosearmor_1.png";
+			return "oremod:textures/armor/rosearmor_1.png";
 		}
 	}
 }
