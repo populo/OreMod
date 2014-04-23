@@ -29,18 +29,18 @@ public class WorldGen implements IWorldGenerator {
 	}
 	
 	private void generateSurface(World world, Random random, int x, int y) {
-		this.addOreSpawn(Ores.rubyOre, world, random, x, y, 16, 16, 3+random.nextInt(5), 75, 0, 100);
-		this.addOreSpawn(Ores.sapOre, world, random, x, y, 16, 16, 3+random.nextInt(7), 75, 0, 100);
-		this.addOreSpawn(Ores.silOre, world, random, x, y, 16, 16, 5+random.nextInt(4), 75, 0, 100);
-		this.addOreSpawn(Ores.graOre, world, random, x, y, 16, 16, 4+random.nextInt(4), 75, 0, 100);
-		this.addOreSpawn(Ores.aluOre, world, random, x, y, 16, 16, 7+random.nextInt(3), 75, 0, 100);
-		this.addOreSpawn(Ores.copOre, world, random, x, y, 16, 16, 4+random.nextInt(5), 75, 0, 100);
-		this.addOreSpawn(Ores.leadOre, world, random, x, y, 16, 16, 3+random.nextInt(4), 75, 0, 100);
-		this.addOreSpawn(Ores.tinOre, world, random, x, y, 16, 16, 4+random.nextInt(5), 75, 0, 100);
-		this.addOreSpawn(Ores.ameOre, world, random, x, y, 16, 16, 3+random.nextInt(6), 75, 0, 100);
-		this.addOreSpawn(Ores.citOre, world, random, x, y, 16, 16, 6+random.nextInt(4), 75, 0, 100);
-		this.addOreSpawn(Ores.roseOre, world, random, x, y, 16, 16, 5+random.nextInt(4), 75, 0, 100);
-		this.addOreSpawn(Ores.tunOre, world, random, x, y, 16, 16, 4+random.nextInt(3), 7, 0, 50);
+		this.addOreSpawn(Ores.rubyOre, world, random, x, y, 16, 16, 3+random.nextInt(3), 7, 0, 50);
+		this.addOreSpawn(Ores.sapOre, world, random, x, y, 16, 16, 3+random.nextInt(7), 9, 0, 63);
+		this.addOreSpawn(Ores.silOre, world, random, x, y, 16, 16, 5+random.nextInt(4), 10, 34, 100);
+		this.addOreSpawn(Ores.graOre, world, random, x, y, 16, 16, 2+random.nextInt(3), 2, 0, 20);
+		this.addOreSpawn(Ores.aluOre, world, random, x, y, 16, 16, 7+random.nextInt(3), 10, 30, 100);
+		this.addOreSpawn(Ores.copOre, world, random, x, y, 16, 16, 4+random.nextInt(5), 8, 40, 72);
+		this.addOreSpawn(Ores.leadOre, world, random, x, y, 16, 16, 3+random.nextInt(4), 6, 0, 31);
+		this.addOreSpawn(Ores.tinOre, world, random, x, y, 16, 16, 4+random.nextInt(5), 10, 50, 100);
+		this.addOreSpawn(Ores.ameOre, world, random, x, y, 16, 16, 3+random.nextInt(6), 9, 0, 34);
+		this.addOreSpawn(Ores.citOre, world, random, x, y, 16, 16, 6+random.nextInt(4), 7, 0, 50);
+		this.addOreSpawn(Ores.roseOre, world, random, x, y, 16, 16, 5+random.nextInt(4), 10, 0, 100);
+		this.addOreSpawn(Ores.tunOre, world, random, x, y, 16, 16, 4+random.nextInt(3), 7, 0, 42);
 	}
 	
 	private void generateEnd(World world, Random random, int x, int y) {

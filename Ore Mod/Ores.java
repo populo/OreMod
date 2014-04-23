@@ -9,6 +9,7 @@ import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemAxe;
 import net.minecraft.item.ItemHoe;
 import net.minecraft.item.ItemPickaxe;
+import net.minecraft.item.ItemSeeds;
 import net.minecraft.item.ItemSpade;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
@@ -37,6 +38,8 @@ import populo.mod.ores.tools.Hoe;
 import populo.mod.ores.tools.Pickaxe;
 import populo.mod.ores.tools.Shovel;
 import populo.mod.ores.tools.Sword;
+import populo.mod.ores.world.Plant;
+import populo.mod.ores.world.TunSeed;
 import populo.mod.ores.world.TungstenFuel;
 import populo.mod.ores.world.WorldGen;
 import cpw.mods.fml.common.Mod;
@@ -76,7 +79,7 @@ public class Ores {
 	public static EnumToolMaterial GrapheneTools = EnumHelper.addToolMaterial("Graphene Tools", 3, 9857, 9.6F, 10.4F, 53);
 	public static EnumToolMaterial AmethystTools = EnumHelper.addToolMaterial("Amethyst Tools", 3, 2843, 8.2F, 7.9F, 48);
 	public static EnumToolMaterial CitrineTools = EnumHelper.addToolMaterial("Citrine Tools", 2, 2644, 8.4F, 8.3F, 36);
-	public static EnumToolMaterial RoseQuartzTools = EnumHelper.addToolMaterial("Rose Quartz Tools", 1, 1852, 6.2F, 2.5F, 42);
+	public static EnumToolMaterial RoseQuartzTools = EnumHelper.addToolMaterial("Rose Quartz Tools", 2, 1852, 6.2F, 2.5F, 42);
 	public static EnumToolMaterial ObsidianTools = EnumHelper.addToolMaterial("Obsidian Tools",3, 2300, 10.0F, 4.5F, 25);
 	public static EnumToolMaterial TungstenTools = EnumHelper.addToolMaterial("Tungsten Tools", 3, 1562, 17.0F, 14.0F, 28);
 	public static EnumToolMaterial EmeraldTools =  EnumHelper.addToolMaterial("Emerald Tools", 3, 6342, 8.4F, 6.7F, 40);
@@ -188,7 +191,7 @@ public class Ores {
 		obsIngot = new Ingot(6011, 64, Ores.oreModTab).setUnlocalizedName("obsIngot");
 		tunIngot = new Ingot(6129, 64, Ores.oreModTab).setUnlocalizedName("tunIngot");
 		tunMolten = new Ingot(6130, 64, Ores.oreModTab).setUnlocalizedName("tunMI");
-		tunNugget = new Ingot(6169, 64, Ores.oreModTab).setUnlocalizedName("tunNugget");
+	
 
 		//pickaxes
 
@@ -375,8 +378,11 @@ public class Ores {
 		tunBlock = new OBlock(3526, "tunBlock").setUnlocalizedName("tunBlock").setHardness(8.0F);
 		tunMoltenBlock = new OBlock(3527, "tunMBlock").setUnlocalizedName("tunMBlock").setHardness(3.5F);
 		
-		//grass seeds
 		
+		//seeds
+		
+		tunPlant = new Plant(3528).setUnlocalizedName("tunPlant");
+		tunNugget = (ItemSeeds) new TunSeed(6169, Ores.tunPlant.blockID, Block.slowSand.blockID).setCreativeTab(Ores.oreModTab).setUnlocalizedName("tunNugget");
 		MinecraftForge.addGrassSeed(new ItemStack(Ores.tunNugget), 1);
 		
 		/*
@@ -522,7 +528,7 @@ public class Ores {
 			"#", "s", "s", '#', Ores.rubyIngot, 's', Item.stick
 		});
 		GameRegistry.addRecipe(new ItemStack(Ores.rubyPick, 1), new Object[] {
-			"###", "s", "s", '#', Ores.rubyIngot, 's', Item.stick
+			"###", " s ", " s ", '#', Ores.rubyIngot, 's', Item.stick
 		});
 		GameRegistry.addRecipe(new ItemStack(Ores.rubyAxe, 1), new Object[] {
 			"## ", "#s ", " s ", '#', Ores.rubyIngot, 's', Item.stick
@@ -558,7 +564,7 @@ public class Ores {
 			"#", "s", "s", '#', Ores.sapIngot, 's', Item.stick
 		});
 		GameRegistry.addRecipe(new ItemStack(Ores.sapPick, 1), new Object[] {
-			"###", "s", "s", '#', Ores.sapIngot, 's', Item.stick
+			"###", " s ", " s ", '#', Ores.sapIngot, 's', Item.stick
 		});
 		GameRegistry.addRecipe(new ItemStack(Ores.sapAxe, 1), new Object[] {
 			"## ", "#s ", " s ", '#', Ores.sapIngot, 's', Item.stick
@@ -594,7 +600,7 @@ public class Ores {
 			"#", "s", "s", '#', Ores.silIngot, 's', Item.stick
 		});
 		GameRegistry.addRecipe(new ItemStack(Ores.silPick, 1), new Object[] {
-			"###", "s", "s", '#', Ores.silIngot, 's', Item.stick
+			"###", " s ", " s ", '#', Ores.silIngot, 's', Item.stick
 		});
 		GameRegistry.addRecipe(new ItemStack(Ores.silAxe, 1), new Object[] {
 			"## ", "#s ", " s ", '#', Ores.silIngot, 's', Item.stick
@@ -630,7 +636,7 @@ public class Ores {
 			"#", "s", "s", '#', Ores.copIngot, 's', Item.stick
 		});
 		GameRegistry.addRecipe(new ItemStack(Ores.copPick, 1), new Object[] {
-			"###", "s", "s", '#', Ores.copIngot, 's', Item.stick
+			"###", " s ", " s ", '#', Ores.copIngot, 's', Item.stick
 		});
 		GameRegistry.addRecipe(new ItemStack(Ores.copAxe, 1), new Object[] {
 			"## ", "#s ", " s ", '#', Ores.copIngot, 's', Item.stick
@@ -666,7 +672,7 @@ public class Ores {
 			"#", "s", "s", '#', Ores.leadIngot, 's', Item.stick
 		});
 		GameRegistry.addRecipe(new ItemStack(Ores.leadPick, 1), new Object[] {
-			"###", "s", "s", '#', Ores.leadIngot, 's', Item.stick
+			"###", " s ", " s ", '#', Ores.leadIngot, 's', Item.stick
 		});
 		GameRegistry.addRecipe(new ItemStack(Ores.leadAxe, 1), new Object[] {
 			"## ", "#s ", " s ", '#', Ores.leadIngot, 's', Item.stick
@@ -702,7 +708,7 @@ public class Ores {
 			"#", "s", "s", '#', Ores.tinIngot, 's', Item.stick
 		});
 		GameRegistry.addRecipe(new ItemStack(Ores.tinPick, 1), new Object[] {
-			"###", "s", "s", '#', Ores.tinIngot, 's', Item.stick
+			"###", " s ", " s ", '#', Ores.tinIngot, 's', Item.stick
 		});
 		GameRegistry.addRecipe(new ItemStack(Ores.tinAxe, 1), new Object[] {
 			"## ", "#s ", " s ", '#', Ores.tinIngot, 's', Item.stick
@@ -738,7 +744,7 @@ public class Ores {
 			"#", "s", "s", '#', Ores.aluIngot, 's', Item.stick
 		});
 		GameRegistry.addRecipe(new ItemStack(Ores.aluPick, 1), new Object[] {
-			"###", "s", "s", '#', Ores.aluIngot, 's', Item.stick
+			"###", " s ", " s ", '#', Ores.aluIngot, 's', Item.stick
 		});
 		GameRegistry.addRecipe(new ItemStack(Ores.aluAxe, 1), new Object[] {
 			"## ", "#s ", " s ", '#', Ores.aluIngot, 's', Item.stick
@@ -774,7 +780,7 @@ public class Ores {
 			"#", "s", "s", '#', Ores.graIngot, 's', Item.stick
 		});
 		GameRegistry.addRecipe(new ItemStack(Ores.graPick, 1), new Object[] {
-			"###", "s", "s", '#', Ores.graIngot, 's', Item.stick
+			"###", " s ", " s ", '#', Ores.graIngot, 's', Item.stick
 		});
 		GameRegistry.addRecipe(new ItemStack(Ores.graAxe, 1), new Object[] {
 			"## ", "#s ", " s ", '#', Ores.graIngot, 's', Item.stick
@@ -810,7 +816,7 @@ public class Ores {
 			"#", "s", "s", '#', Ores.ameIngot, 's', Item.stick
 		});
 		GameRegistry.addRecipe(new ItemStack(Ores.amePick, 1), new Object[] {
-			"###", "s", "s", '#', Ores.ameIngot, 's', Item.stick
+			"###", " s ", " s ", '#', Ores.ameIngot, 's', Item.stick
 		});
 		GameRegistry.addRecipe(new ItemStack(Ores.ameAxe, 1), new Object[] {
 			"## ", "#s ", " s ", '#', Ores.ameIngot, 's', Item.stick
@@ -846,7 +852,7 @@ public class Ores {
 			"#", "s", "s", '#', Ores.citIngot, 's', Item.stick
 		});
 		GameRegistry.addRecipe(new ItemStack(Ores.citPick, 1), new Object[] {
-			"###", "s", "s", '#', Ores.citIngot, 's', Item.stick
+			"###", " s ", " s ", '#', Ores.citIngot, 's', Item.stick
 		});
 		GameRegistry.addRecipe(new ItemStack(Ores.citAxe, 1), new Object[] {
 			"## ", "#s ", " s ", '#', Ores.citIngot, 's', Item.stick
@@ -882,7 +888,7 @@ public class Ores {
 			"#", "s", "s", '#', Ores.roseIngot, 's', Item.stick
 		});
 		GameRegistry.addRecipe(new ItemStack(Ores.rosePick, 1), new Object[] {
-			"###", "s", "s", '#', Ores.roseIngot, 's', Item.stick
+			"###", " s ", " s ", '#', Ores.roseIngot, 's', Item.stick
 		});
 		GameRegistry.addRecipe(new ItemStack(Ores.roseAxe, 1), new Object[] {
 			"## ", "#s ", " s ", '#', Ores.roseIngot, 's', Item.stick
@@ -918,7 +924,7 @@ public class Ores {
 			"#", "s", "s", '#', Ores.obsIngot, 's', Item.stick
 		});
 		GameRegistry.addRecipe(new ItemStack(Ores.obsPick, 1), new Object[] {
-			"###", "s", "s", '#', Ores.obsIngot, 's', Item.stick
+			"###", " s ", " s ", '#', Ores.obsIngot, 's', Item.stick
 		});
 		GameRegistry.addRecipe(new ItemStack(Ores.obsAxe, 1), new Object[] {
 			"## ", "#s ", " s ", '#', Ores.obsIngot, 's', Item.stick
@@ -954,7 +960,7 @@ public class Ores {
 			"#", "s", "s", '#', Item.emerald, 's', Item.stick
 		});
 		GameRegistry.addRecipe(new ItemStack(Ores.emPick, 1), new Object[] {
-			"###", "s", "s", '#', Item.emerald, 's', Item.stick
+			"###", " s ", " s ", '#', Item.emerald, 's', Item.stick
 		});
 		GameRegistry.addRecipe(new ItemStack(Ores.emAxe, 1), new Object[] {
 			"## ", "#s ", " s ", '#', Item.emerald, 's', Item.stick
@@ -990,7 +996,7 @@ public class Ores {
 			"#", "s", "s", '#', Ores.tunMolten, 's', Item.stick
 		});
 		GameRegistry.addRecipe(new ItemStack(Ores.tunPick, 1), new Object[] {
-			"###", "s", "s", '#', Ores.tunMolten, 's', Item.stick
+			"###", " s ", " s ", '#', Ores.tunMolten, 's', Item.stick
 		});
 		GameRegistry.addRecipe(new ItemStack(Ores.tunAxe, 1), new Object[] {
 			"## ", "#s ", " s ", '#', Ores.tunMolten, 's', Item.stick
@@ -1158,7 +1164,7 @@ public class Ores {
 		LanguageRegistry.addName(roseLeggings, "Rose Quartz Leggings");
 		LanguageRegistry.addName(roseBoots, "Rose Quartz Boots");
 
-		//names tiger
+		//names obsidian
 
 		LanguageRegistry.addName(obsPick, "Obsidian Pickaxe");
 		LanguageRegistry.addName(obsAxe, "Obsidian Axe");
@@ -1184,18 +1190,20 @@ public class Ores {
 		LanguageRegistry.addName(tunLeggings, "Tungsten Leggings");
 		LanguageRegistry.addName(tunBoots, "Tungsten Boots");
 		LanguageRegistry.addName(tunMolten, "Molten Tungsten Ingot");
+		LanguageRegistry.addName(tunNugget, "Tungsten Nugget");
 
 		//names emerald
-
-		LanguageRegistry.addName(tunPick, "Tungsten Pickaxe");
-		LanguageRegistry.addName(tunAxe, "Tungsten Axe");
-		LanguageRegistry.addName(tunHoe, "Tungsten Hoe");
-		LanguageRegistry.addName(tunShovel, "Tungsten Shovel");
-		LanguageRegistry.addName(tunSword, "Tungsten Sword");
-		LanguageRegistry.addName(tunHelmet, "Tungsten Helmet");
-		LanguageRegistry.addName(tunChest, "Tungsten Chestplate");
-		LanguageRegistry.addName(tunLeggings, "Tungsten Leggings");
-		LanguageRegistry.addName(tunBoots, "Tungsten Boots");
+		
+		
+		LanguageRegistry.addName(emPick, "Emerald Pickaxe");
+		LanguageRegistry.addName(emAxe, "Emerald Axe");
+		LanguageRegistry.addName(emHoe, "Emerald Hoe");
+		LanguageRegistry.addName(emShovel, "Emerald Shovel");
+		LanguageRegistry.addName(emSword, "Emerald Sword");
+		LanguageRegistry.addName(emHelmet, "Emerald Helmet");
+		LanguageRegistry.addName(emChest, "Emerald Chestplate");
+		LanguageRegistry.addName(emLeggings, "Emerald Leggings");
+		LanguageRegistry.addName(emBoots, "Emerald Boots");
 
 	}
 
